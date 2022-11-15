@@ -21,7 +21,6 @@ Front-End Developer Professional Certificate - In Progress ⏳
 <h3 align="left">Where to find me:</h3>
 
 <a href="https://www.linkedin.com/in/lucas-kraus-monteiro-alves-00200b252/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="teste" height="30" width="40" /></a>
-  
 <br> 
 <br>
 You can check some projects made by me in <a href="https://github.com/lucaskraus?tab=repositories">Repositories.</a>
