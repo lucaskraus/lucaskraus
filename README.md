@@ -5,8 +5,13 @@ My name is Lucas Kraus. I'm 20 years old. I'm a student of Computer Science in C
 
 <h3 align="left">Programming languages, frameworks and tools that I work with:</h3>
 
-<a href="https://www.python.org/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="teste" height="40" width="40" /></a><a href="https://www.python.org/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="teste" height="40" width="40" /></a>
+<a href="https://www.python.org/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="python" height="40" width="40" /></a>
 
+<a href="https://www.python.org/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="js" height="40" width="40" /></a>
+
+<a href="https://www.python.org/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="html" height="40" width="40" /></a>
+
+<a href="https://www.python.org/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/w3_css/w3_css-official.svg" alt="css" height="40" width="40" /></a>
 
 
 <h3 align="left">Where to find me:</h3>
