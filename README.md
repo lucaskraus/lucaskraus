@@ -24,5 +24,4 @@ Front-End Developer Professional Certificate - In Progress ⏳
   
 <br> 
 <br>
-<br>
 You can check some projects made by me in <a href="https://github.com/lucaskraus?tab=repositories">Repositories.</a>
