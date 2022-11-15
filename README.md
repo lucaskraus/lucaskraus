@@ -5,7 +5,7 @@ My name is Lucas Kraus. I'm 20 years old. I'm a student of Computer Science in C
 
 <h3 align="left">Programming languages, frameworks and tools that I work with:</h3>
 
-<a href="https://www.python.org/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/python/python-ar21.svg" alt="teste" height="40" width="40" /></a><a href="https://www.python.org/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg" alt="teste" height="40" width="40" /></a>
+<a href="https://www.python.org/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="teste" height="40" width="40" /></a><a href="https://www.python.org/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" alt="teste" height="40" width="40" /></a>
 
 
 
