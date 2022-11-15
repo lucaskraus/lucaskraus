@@ -11,4 +11,4 @@ My name is Lucas Kraus. I'm 20 years old. I'm a student of Computer Science in C
 <p align="left">
 <a href="https://www.linkedin.com/in/lucas-kraus-monteiro-alves-00200b252/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="teste" height="30" width="40" /></a>
   
-You can check some projects made by me in my <a href="https://github.com/lucaskraus?tab=repositories">repositories.</a>
+You can check some projects made by me in <a href="https://github.com/lucaskraus?tab=repositories">Repositories.</a>
