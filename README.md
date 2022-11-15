@@ -1,4 +1,4 @@
-<h3 align="left">Welcome to my page! 🤩</h3>
+<h1 align="left">Welcome to my page! 🤩</h1>
 
 My name is Lucas Kraus. I'm 20 years old. I'm a student of Computer Science in Centro Universitário FEI (São Paulo). 💻
 
