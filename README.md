@@ -2,6 +2,7 @@
 
 My name is Lucas Kraus. I'm 20 years old. I'm a student of Computer Science in Centro Universitário FEI (São Paulo).
 
+Meta Front-End Developer Professional Certificate - In Progress ⏳
 
 <h3 align="left">Programming languages, frameworks and tools that I work with:</h3>
 
