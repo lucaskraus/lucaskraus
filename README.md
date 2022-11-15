@@ -20,7 +20,8 @@ Front-End Developer Professional Certificate - In Progress ⏳
 
 <h3 align="left">Where to find me:</h3>
 
-<a href="https://www.linkedin.com/in/lucas-kraus-monteiro-alves-00200b252/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="teste" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/lucas-kraus-monteiro-alves-00200b252/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="teste" height="30" width="40" /></a> <a href=mailto:lucas-kraus@hotmail.com target="blank"><img align="center" src="![image](https://user-images.githubusercontent.com/72233741/202026039-6c315b0c-9295-4566-a439-caeccd5718c7.png)
+" alt="teste" height="30" width="40" /></a>
 <br> 
 <br>
 
