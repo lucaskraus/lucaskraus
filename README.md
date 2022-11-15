@@ -1,4 +1,4 @@
-<h1 align="left">Welcome to my page! 🤩</h1>
+<h1 align="left">Welcome to my page!</h1>
 
 My name is Lucas Kraus. I'm 20 years old. I'm a student of Computer Science in Centro Universitário FEI (São Paulo).<br>
 <br>
@@ -20,7 +20,8 @@ Front-End Developer Professional Certificate - In Progress ⏳
 
 <h3 align="left">Where to find me:</h3>
 
-<a href="https://www.linkedin.com/in/lucas-kraus-monteiro-alves-00200b252/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="teste" height="30" width="40" /></a> <a href=mailto:lucas-kraus@hotmail.com target="blank"><img align="center" src="![image](https://user-images.githubusercontent.com/72233741/202026039-6c315b0c-9295-4566-a439-caeccd5718c7.png)" alt="teste" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/lucas-kraus-monteiro-alves-00200b252/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="teste" height="30" width="40" /></a> <a href=mailto:lucas-kraus@hotmail.com target="blank"><img align="center" src="![image](https://user-images.githubusercontent.com/72233741/202026521-0270ccdb-1bd0-40d4-81ff-cb7ef42a67b6.png)
+" alt="teste" height="30" width="40" /></a>
 <br> 
 <br>
 
