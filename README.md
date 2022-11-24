@@ -13,7 +13,6 @@ My name is Lucas Kraus. I'm 20 years old. I'm a student of Computer Science in C
 
 Front-End Developer Professional Certificate - In Progress ⏳
 <br>
-<br>
 
 <h3 align="left">Where to find me:</h3>
 
