@@ -10,7 +10,14 @@ My name is Lucas Kraus. I'm 20 years old. I'm a student of Computer Science in C
 
 <h3 align="left">Courses and professional certificates:</h3>
 
-Front-End Developer Professional Certificate - In Progress ⏳
+*Certificates:* 🥇
+Meta Front-End Developer Professional Certificate - In Progress ⏳
+
+*Courses:* 📖
+2022 - Programming with JavaScript - Meta
+2022 - Version Control - Meta
+2022 - HTML and CSS in Depth - Meta
+2022 - React Basics - Meta
 <br>
 
 <h3 align="left">Where to find me:</h3>
