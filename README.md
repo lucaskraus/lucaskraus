@@ -13,7 +13,7 @@ My name is Lucas Kraus. I'm 20 years old. I'm a student of Computer Science in C
 *Certificates* 🥇
 <br>
 Meta Front-End Developer Professional Certificate - In Progress ⏳
-<br>
+
 *Courses* 📖
 <br>
 2022 - Programming with JavaScript - Meta
