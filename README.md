@@ -87,6 +87,10 @@ Meta Front-End Developer Professional Certificate
 <br>
 2023 - React Basics - Meta
 <br>
+2023 - Advanced React - Meta
+<br>
+2023 - Principles of UX/UI Design - Meta
+<br>
 
 <h3 align="left">Where to find me:</h3>
 
