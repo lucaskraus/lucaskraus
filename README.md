@@ -1,6 +1,6 @@
 <h1 align="left">Welcome to my page!</h1>
 
-My name is Lucas Kraus. I'm 20 years old. I'm a student of Computer Science in Centro Universitário FEI (São Paulo).<br>
+My name is Lucas Kraus. I'm 21 years old. I'm a student of Computer Science in Centro Universitário FEI (São Paulo).<br>
 
 <h3 align="left">Programming languages, frameworks and tools that I work with:</h3>
 
@@ -13,6 +13,7 @@ My name is Lucas Kraus. I'm 20 years old. I'm a student of Computer Science in C
 *Certificates* 🥇
 <br>
 Meta Front-End Developer Professional Certificate
+GitHub Foundations
 
 
 
