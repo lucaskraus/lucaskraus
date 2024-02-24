@@ -12,7 +12,7 @@ My name is Lucas Kraus. I'm 21 years old. I'm a student of Computer Science in C
 
 *Certificates* 🥇
 <br>
-Meta Front-End Developer Professional Certificate
+Meta Front-End Developer Professional Certificate <br>
 GitHub Foundations
 
 
