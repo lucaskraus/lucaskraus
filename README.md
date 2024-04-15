@@ -92,6 +92,8 @@ GitHub Foundations Certification
 <br>
 2023 - Principles of UX/UI Design - Meta
 <br>
+2023 - Bootcamp Cielo Dev
+<br>
 
 <h3 align="left">Where to find me:</h3>
 
