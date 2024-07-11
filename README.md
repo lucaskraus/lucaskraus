@@ -103,6 +103,9 @@ GitHub Foundations Certification
 2023 - Bootcamp Cielo Dev
 <br>
 
+You can my certifications and certificates in <a href="https://github.com/lucaskraus/certificates">Certificates.</a>
+<br>
+
 <h3 align="left">Where to find me:</h3>
 
 <a href="https://www.linkedin.com/in/lucas-kraus-monteiro-alves-00200b252/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="teste" height="30" width="40" /></a>
