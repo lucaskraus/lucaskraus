@@ -6,7 +6,7 @@ My name is Lucas Kraus. I'm 22 years old. Bachelor in Computer Science from Cent
 
 <a href="" target="blank">
 <img align="center" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="html" height="35" width="35" /></a> <a href="" target="blank">
-<img align="center" src="https://www.vectorlogo.zone/logos/w3_css/w3_css-official.svg" alt="css" height="40" width="40" /></a> <a href="" target="blank">
+<img align="center" src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="css" height="40" width="40" /></a> <a href="" target="blank">
 <img align="center" src="https://www.vectorlogo.zone/logos/javascript/javascript-vertical.svg" alt="js" height="35" width="35" /></a> <a href="" target="blank">
 <img align="center" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="reactjs" height="35" width="35" /></a> <a href="" target="blank">
 <img align="center" src="https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg" alt="reactjs" height="35" width="35" /></a> <a href="" target="blank">
