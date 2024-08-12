@@ -16,8 +16,6 @@ My name is Lucas Kraus. I'm 22 years old. Bachelor in Computer Science from Cent
 <br>
 <br>
 
-<h3 align="left">Courses and professional certificates:</h3>
-
 *Certificates* 🥇
 <br>
 Meta Front-End Developer Professional Certificate <br>
