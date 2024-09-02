@@ -7,9 +7,10 @@ My name is Lucas Kraus. I'm 22 years old. Bachelor in Computer Science from Cent
 <a href="" target="blank">
 <img align="center" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="html" height="40" width="40" /></a> <a href="" target="blank">
 <img align="center" src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="css" height="40" width="40" /></a> <a href="" target="blank">
-<img align="center" src="https://www.vectorlogo.zone/logos/javascript/javascript-vertical.svg" alt="js" height="35" width="35" /></a> <a href="" target="blank">
+<img align="center" src="https://github.com/user-attachments/assets/260ea898-43d4-48f8-9301-514e068fdc6e" alt="js" height="40" width="40" /></a> <a href="" target="blank">
+<img align="center" src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" alt="ts" height="40" width="40" /></a> <a href="" target="blank">
 <img align="center" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="reactjs" height="35" width="35" /></a> <a href="" target="blank">
-<img align="center" src="https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg" alt="reactjs" height="35" width="35" /></a> <a href="" target="blank">
+<img align="center" src="https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg" alt="vuejs" height="35" width="35" /></a> <a href="" target="blank">
 <img align="center" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="nodejs" height="30" width="70" /></a> <a href="" target="blank">
 <img align="center" src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="python" height="35" width="35" /></a> <a href="" target="blank">
 <img align="center" src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg" alt="mysql" height="30" width="70" /></a>
