@@ -24,7 +24,7 @@ B.Sc. in Computer Science - FEI University Center <br>
 <br>
 Meta Front-End Developer Professional Certificate <br>
 GitHub Foundations Certification <br>
-...
+... <br>
 You can my certifications and certificates in <a href="https://github.com/lucaskraus/certificates">Certificates.</a>
 <br>
 
