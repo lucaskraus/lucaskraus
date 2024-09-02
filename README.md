@@ -16,11 +16,11 @@ My name is Lucas Kraus. I'm 22 years old. Bachelor in Computer Science from Cent
 <br>
 <br>
 
-*Academic Background*
+**Academic Background**
 <br>
 B.Sc. in Computer Science - FEI University Center <br>
 
-*Certificates* 🥇
+**Certificates** 🥇
 <br>
 Meta Front-End Developer Professional Certificate <br>
 GitHub Foundations Certification <br>
