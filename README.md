@@ -13,7 +13,6 @@ My name is Lucas Kraus. I'm 22 years old. Bachelor in Computer Science from Cent
 <img align="center" src="https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg" alt="vuejs" height="35" width="35" /></a> <a href="" target="blank">
 <img align="center" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" alt="nodejs" height="30" width="70" /></a> <a href="" target="blank">
 <img align="center" src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="python" height="35" width="35" /></a> <a href="" target="blank">
-<img align="center" src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg" alt="mysql" height="30" width="70" /></a>
 <br>
 <br>
 
