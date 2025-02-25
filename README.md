@@ -27,8 +27,10 @@ Meta Front-End Developer Professional Certificate <br>
 GitHub Foundations Certification <br>
 Full Stack Bootcamp Cielo Dev <br> 
 ... <br>
-You can my certifications and certificates in <a href="https://github.com/lucaskraus/certificates">Certificates.</a>
+You can check my certifications and certificates in <a href="https://github.com/lucaskraus/certificates">Certificates.</a>
 <br>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs?username=lucaskraus&show_icons=true&locale=en&layout=compact&theme=chartreuse-dark" alt="ovi" /> <br>
 
 <h3 align="left">Where to find me:</h3>
 
