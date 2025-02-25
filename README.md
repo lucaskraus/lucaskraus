@@ -30,12 +30,13 @@ Full Stack Bootcamp Cielo Dev <br>
 You can check my certifications and certificates in <a href="https://github.com/lucaskraus/certificates">Certificates.</a>
 <br>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=lucaskraus&show_icons=true&locale=en&layout=compact&theme=chartreuse-dark" alt="ovi" /> <br>
-
 <h3 align="left">Where to find me:</h3>
 
 <a href="https://www.linkedin.com/in/lucas-kraus-monteiro-alves-00200b252/" target="blank"><img align="center" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="teste" height="30" width="40" /></a>
 <br> 
 <br>
 
-You can check some projects made by me in <a href="https://github.com/lucaskraus?tab=repositories">Repositories.</a>
+You can check some projects made by me in <a href="https://github.com/lucaskraus?tab=repositories">Repositories.</a><br>
+
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=lucaskraus&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=2B5BBD&icon_color=1124BB&text_color=A1A1A1&bg_color=0,000000,130F40" alt="my Github Stats"/>
+
