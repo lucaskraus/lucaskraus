@@ -3,9 +3,9 @@
 My name is Lucas Kraus. I'm 22 years old. Bachelor in Computer Science from Centro Universitário FEI (São Paulo).<br>
 
 <h3 align="left">Programming languages, frameworks and tools that I work with:</h3>
-<br>
+
 [![My Skills](https://skillicons.dev/icons?i=react,nextjs,vue,nuxtjs,html,css,js,ts,figma,go)](https://skillicons.dev)
-<br>
+
 **Academic Background 📖**
 <br>
 B.Sc. in Computer Science - FEI University Center <br>
