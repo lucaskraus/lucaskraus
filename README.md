@@ -4,7 +4,7 @@ My name is Lucas Kraus. I'm 22 years old. Bachelor in Computer Science from Cent
 
 <h3 align="left">Programming languages, frameworks and tools that I work with:</h3>
 
-[![My Skills](https://skillicons.dev/icons?i=react,nextjs,vue,nuxtjs,html,css,js,ts,figma,go)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vue,nuxtjs,go,nodejs,figma)](https://skillicons.dev)
 
 **Academic Background 📖**
 <br>
