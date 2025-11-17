@@ -53,7 +53,7 @@ export default function Timeline() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 + index * 0.1, ease: 'easeInOut' }}
-            className="max-w-44"
+            className="max-w-48"
           >
             <TimelineItem
               key={item.title}
