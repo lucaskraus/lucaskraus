@@ -1,5 +1,6 @@
-import { AnimatePresence, motion } from 'motion/react'
+import { motion } from 'motion/react'
 import { useState } from 'react'
+import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 
 const TIMELINE_ITEMS = [
   {
@@ -54,22 +55,20 @@ const TimelineItem = ({
       <h1 className="text-xl font-medium">{title}</h1>
       <p className="font-vt323 text-lg text-center">{label}</p>
       <div className="relative flex items-center justify-center">
-        <AnimatePresence>
-          {selectedIndex === index && (
-            <motion.div
-              key="balloon"
-              initial={{ opacity: 0, y: -6, scale: 0.98 }}
-              animate={{ opacity: 1, y: 6, scale: 1 }}
-              exit={{ opacity: 0, y: -6, scale: 0.98 }}
-              transition={{ duration: 0.25, ease: 'easeOut' }}
-              className="absolute top-4 left-1/2 -translate-x-1/2 z-10"
-            >
-              <div className="rounded-md bg-gray-900 text-white text-xs px-3 py-2 shadow-lg text-center">
+        {selectedIndex === index && (
+          <motion.div
+            layoutId="balloon"
+            key="balloon"
+            transition={{ ease: 'easeInOut' }}
+            className="absolute top-4 left-1/2 -translate-x-1/2 z-10 w-max max-w-[90vw]"
+          >
+            <div className="rounded-md bg-gray-900 px-3 py-2 shadow-lg text-center">
+              <motion.span className="text-white text-sm">
                 {description}
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+              </motion.span>
+            </div>
+          </motion.div>
+        )}
         <div className="h-2 w-2 bg-blue-400 rounded-full" />
       </div>
     </div>
@@ -79,12 +78,33 @@ const TimelineItem = ({
 export default function Timeline() {
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
 
+  const handleSelectIndex = (index: number) => {
+    if (index < 0) {
+      setSelectedIndex(0)
+    } else if (index >= TIMELINE_ITEMS.length) {
+      setSelectedIndex(TIMELINE_ITEMS.length - 1)
+    } else {
+      setSelectedIndex(index)
+    }
+  }
+
   return (
     <div className="flex flex-col gap-10">
-      <div className="flex flex-row justify-between items-center"></div>
-      <div className="flex flex-col items-center w-full gap-2">
-        <h1 className="text-2xl font-medium">Career</h1>
-        <p className="text-lg">A brief overview of my career until now</p>
+      <div className="flex flex-row justify-between items-center">
+        <ChevronLeftIcon
+          className="cursor-pointer"
+          onClick={() => handleSelectIndex(selectedIndex - 1)}
+        />
+        <div className="flex flex-col items-center w-full gap-2">
+          <h1 className="text-2xl font-medium select-none">Career</h1>
+          <p className="text-lg select-none">
+            A brief overview of my career until now
+          </p>
+        </div>
+        <ChevronRightIcon
+          className="cursor-pointer"
+          onClick={() => handleSelectIndex(selectedIndex + 1)}
+        />
       </div>
       <div className="flex flex-row w-full gap-12 items-center justify-center flex-wrap">
         {TIMELINE_ITEMS.map((item, index) => (
