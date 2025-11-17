@@ -3,6 +3,7 @@ import ProfileCard from '@/components/ProfileCard'
 import Introduction from '@/components/Introduction'
 import Timeline from '@/components/Timeline'
 import Repositories from '@/components/Repositories'
+import AboutMe from '@/components/AboutMe'
 import './App.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <ProfileCard />
           <Introduction />
         </div>
+        <AboutMe />
         <Timeline />
         <Repositories />
       </div>

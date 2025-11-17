@@ -30,7 +30,7 @@ export default function AboutMe() {
               {activeTab === tab.id ? (
                 <motion.div
                   layoutId="tab-indicator"
-                  className="absolute inset-0 rounded-lg bg-black/5"
+                  className="absolute inset-0 rounded-lg bg-white/5"
                 />
               ) : null}
               <span className="relative text-inherit">{tab.title}</span>
@@ -38,9 +38,9 @@ export default function AboutMe() {
           ))}
         </div>
         <div className="flex flex-col gap-2">
-          {activeTab === 'about' && <div>About</div>}
+          {activeTab === 'introduction' && <div>Introduction</div>}
+          {activeTab === 'certificates' && <div>Certificates</div>}
           {activeTab === 'skills' && <div>Skills</div>}
-          {activeTab === 'projects' && <div>Projects</div>}
         </div>
       </div>
     </div>
