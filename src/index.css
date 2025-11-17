@@ -96,6 +96,7 @@ button:focus-visible {
 }
 
 @theme inline {
+  --font-vt323: "VT323", monospace;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
