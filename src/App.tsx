@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className="flex flex-1 h-screen w-screen flex-col relative">
+    <div className="flex h-screen w-screen flex-col relative">
       <DarkVeil speed={1.5} />
       <div className='absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center'>
         <div className='flex flex-col gap-2'>
