@@ -1,9 +1,9 @@
-import DarkVeil from '@/components/DarkVeil'
-import './App.css'
 import Header from '@/components/Header'
 import ProfileCard from '@/components/ProfileCard'
 import Introduction from '@/components/Introduction'
 import Timeline from '@/components/Timeline'
+import Projects from './components/Projects'
+import './App.css'
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
           <Introduction />
         </div>
         <Timeline />
+        <Projects />
       </div>
     </div>
   )
