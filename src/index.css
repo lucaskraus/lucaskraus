@@ -63,8 +63,8 @@ body {
 }
 
 @theme inline {
-  --font-vt323: "VT323", monospace;
-  --font-roboto-mono: "Roboto Mono", monospace;
+  --font-vt323: 'VT323', monospace;
+  --font-roboto-mono: 'Roboto Mono', monospace;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -136,25 +136,21 @@ body {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-.metallic-button {
-  border: none;
-  outline: none;
-  color: #000;
-  background: linear-gradient(
-    45deg,
-    #999 5%,
-    #fff 10%,
-    #ccc 30%,
-    #ddd 50%,
-    #ccc 70%,
-    #fff 80%,
-    #999 95%
-  );
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: all 0.2s ease-in-out;
+.blink {
+  width: 2px;
+  height: 1.6em;
+  background-color: #05df72;
+  animation: blink 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-end;
+  margin-left: 4px;
 }
 
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 
 @layer base {
   * {

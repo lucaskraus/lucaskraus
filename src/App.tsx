@@ -1,5 +1,4 @@
 import Header from '@/components/Header'
-import ProfileCard from '@/components/ProfileCard'
 import Introduction from '@/components/Introduction'
 import Timeline from '@/components/Timeline'
 import Repositories from '@/components/Repositories'
@@ -15,7 +14,7 @@ function App() {
           onPress={() => {}}
         />
         <div className="flex flex-row justify-center gap-32 items-center w-full">
-          <ProfileCard />
+          <div className="flex flex-row gap-4"></div>
           <Introduction />
         </div>
         <AboutMe />

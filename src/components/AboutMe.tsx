@@ -10,37 +10,53 @@ const TAB_MENU = [
     icon: <AppWindowMacIcon className="text-inherit" />,
     content:
       'Mobile & Front-End Engineer with over 8 years of experience in the industry. Specialized in building scalable and efficient web applications using React Native, React, Next.js, Vue.js, Nuxt.js, Tailwind CSS, and Node.js.',
-    image: 'https://skillicons.dev/icons?i=html',
   },
   {
     id: 'certificates',
     title: 'Certificates',
     icon: <TrophyIcon className="text-inherit" />,
     content: 'Certificates',
-    image: 'https://skillicons.dev/icons?i=html',
   },
   {
     id: 'skills',
     title: 'Skills',
     icon: <BrainIcon className="text-inherit" />,
     content: 'Skills',
-    image: 'https://skillicons.dev/icons?i=html',
   },
 ]
 
 const TabCard = ({ id }: { id: string }) => {
   const section = TAB_MENU.find(tab => tab.id === id)
+  const words = section?.content.split(' ') || []
+  const animationDuration = 0.3
+  const delayBetweenWords = 0.05
+  const totalAnimationTime =
+    words.length > 0
+      ? (words.length - 1) * delayBetweenWords + animationDuration
+      : 0
 
   return (
-    <div className="flex flex-row rounded-xl p-4 gap-4 shadow shadow-gray-50 bg-blue-200">
-      <img
-        src={section?.image}
-        alt={section?.title}
-        className="w-24 h-24 rounded-xl"
+    <div className="flex flex-row max-w-4xl flex-wrap gap-1">
+      {words.map((word, index) => (
+        <motion.span
+          key={index}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            delay: index * delayBetweenWords,
+            duration: animationDuration,
+          }}
+          className="text-green-400 font-vt323 text-2xl"
+        >
+          {word}
+        </motion.span>
+      ))}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: totalAnimationTime, duration: 0.1 }}
+        className="blink text-green-400"
       />
-      <div className="flex flex-col gap-2 items-start">
-        <p className="text-base text-black">{section?.content}</p>
-      </div>
     </div>
   )
 }
@@ -67,7 +83,7 @@ export default function AboutMe() {
               {activeTab === tab.id ? (
                 <motion.div
                   layoutId="tab-indicator"
-                  className="absolute inset-0 rounded-lg bg-blue-400"
+                  className="absolute inset-0 rounded-lg bg-green-400"
                 />
               ) : null}
               <span className="relative z-10">{tab.icon}</span>
