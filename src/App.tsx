@@ -7,8 +7,7 @@ import profilePicture from '@/assets/profile.png'
 function App() {
   return (
     <div className="flex h-screen w-screen flex-col relative">
-      <DarkVeil speed={1.5} />
-      <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center p-20 gap-24">
+      <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center py-16 px-20 gap-24">
         <Header items={['Home', 'About', 'Contact']} onPress={() => {}} />
         <div className="flex flex-row justify-center gap-16 items-center w-full">
           <ProfileCard
