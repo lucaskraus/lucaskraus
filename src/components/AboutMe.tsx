@@ -2,6 +2,7 @@ import clsx from 'clsx'
 import { motion } from 'motion/react'
 import { useState } from 'react'
 import { AppWindowMacIcon, TrophyIcon, BrainIcon } from 'lucide-react'
+import macintoshImage from '@/assets/macintosh.png'
 
 const TAB_MENU = [
   {
@@ -68,8 +69,8 @@ export default function AboutMe() {
       <div className="flex flex-col items-center w-full gap-2">
         <h1 className="text-2xl font-medium">About Me</h1>
       </div>
-      <div className="flex flex-row gap-8 items-center w-full mx-auto max-w-5xl">
-        <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-6 items-center w-full mx-auto max-w-5xl">
+        <div className="flex flex-row gap-2">
           {TAB_MENU.map(tab => (
             <motion.div
               layout
@@ -93,10 +94,11 @@ export default function AboutMe() {
             </motion.div>
           ))}
         </div>
-        <div className="flex flex-col gap-2 flex-1">
-          {activeTab === 'introduction' && <TabCard id="introduction" />}
-          {activeTab === 'certificates' && <TabCard id="certificates" />}
-          {activeTab === 'skills' && <TabCard id="skills" />}
+        <div className="relative">
+          <div className="absolute top-22 left-18 max-w-64 max-h-40 overflow-y-auto scrollbar-hide">
+            <TabCard id={activeTab} />
+          </div>
+          <img src={macintoshImage} alt="Macintosh" width={400} />
         </div>
       </div>
     </div>
