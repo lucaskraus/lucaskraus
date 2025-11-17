@@ -54,7 +54,7 @@ const TabCard = ({ id }: { id: string }) => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: totalAnimationTime, duration: 0.1 }}
+        transition={{ delay: totalAnimationTime, duration: 0 }}
         className="blink text-green-400"
       />
     </div>
