@@ -32,14 +32,14 @@ const TabCard = ({ id }: { id: string }) => {
   const section = TAB_MENU.find(tab => tab.id === id)
 
   return (
-    <div className="flex flex-row rounded-xl p-4 gap-4 bg--200">
+    <div className="flex flex-row rounded-xl p-4 gap-4 shadow shadow-gray-50 bg-blue-200">
       <img
         src={section?.image}
         alt={section?.title}
         className="w-24 h-24 rounded-xl"
       />
       <div className="flex flex-col gap-2 items-start">
-        <p className="text-base">{section?.content}</p>
+        <p className="text-base text-black">{section?.content}</p>
       </div>
     </div>
   )
