@@ -33,7 +33,7 @@ const TimelineItem = ({ title, description }: TimelineItemProps) => {
   return (
     <div className="flex flex-col gap-2 items-center">
       <h1 className="text-xl font-medium">{title}</h1>
-      <p className="font-vt323 text-base text-center">{description}</p>
+      <p className="font-vt323 text-lg text-center">{description}</p>
       <div className="h-2 w-2 bg-blue-400 rounded-full" />
     </div>
   )
@@ -44,7 +44,7 @@ export default function Timeline() {
     <div className="flex flex-col gap-10">
       <div className="flex flex-col items-center w-full gap-2">
         <h1 className="text-2xl font-medium">Career</h1>
-        <p className="text-base">A brief overview of my career until now</p>
+        <p className="text-lg">A brief overview of my career until now</p>
       </div>
       <div className="flex flex-row w-full gap-12 items-center justify-center flex-wrap">
         {TIMELINE_ITEMS.map((item, index) => (
