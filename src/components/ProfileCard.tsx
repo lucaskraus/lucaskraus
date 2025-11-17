@@ -1,6 +1,7 @@
 import { Github, Linkedin, Twitter, Mail, Globe } from 'lucide-react';
 import { motion, useMotionValue, useSpring, useTransform } from 'motion/react';
 import { useRef } from 'react';
+import profilePicture from '@/assets/profile.jpg';
 
 export default function ProfileCard() {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -85,7 +86,7 @@ export default function ProfileCard() {
     <div style={{ perspective: '1000px' }}>
       <motion.div
         ref={cardRef}
-        className='flex rounded-xl metallic-button px-6 py-4 flex-col gap-4'
+        className='flex rounded-xl metallic-button px-10 py-4 flex-col gap-4 items-center'
         style={{
           transformStyle: 'preserve-3d',
           rotateX,
@@ -96,7 +97,18 @@ export default function ProfileCard() {
         onHoverStart={handleHoverStart}
         onHoverEnd={handleHoverEnd}
       >
+        <img src={profilePicture} alt="Profile" className='w-40 h-40 rounded-full' />
         <h1 className='text-3xl font-vt323'>Lucas Kraus</h1>
+        <div className='flex flex-col gap-2 items-start w-full'>
+          <div className='flex flex-row gap-2 items-center'>
+            <Github className='w-4 h-4' />
+            <p className='text-base font-vt323'>lucaskraus</p>
+          </div>
+          <div className='flex flex-row gap-2 items-center'>
+            <Linkedin className='w-4 h-4' />
+            <p className='text-base font-vt323'>GitHub</p>
+          </div>
+        </div>
       </motion.div>
     </div>
   );
