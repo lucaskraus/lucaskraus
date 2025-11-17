@@ -55,6 +55,7 @@ const TimelineItem = ({
       <h1 className="text-xl font-medium">{title}</h1>
       <p className="font-vt323 text-lg text-center">{label}</p>
       <div className="relative flex items-center justify-center">
+        <div className="h-2 w-2 bg-blue-400 rounded-full" />
         {selectedIndex === index && (
           <motion.div
             layoutId="balloon"
@@ -69,7 +70,6 @@ const TimelineItem = ({
             </div>
           </motion.div>
         )}
-        <div className="h-2 w-2 bg-blue-400 rounded-full" />
       </div>
     </div>
   )
