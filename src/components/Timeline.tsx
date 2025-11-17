@@ -34,7 +34,7 @@ const TimelineItem = ({ title, description }: TimelineItemProps) => {
     <div className="flex flex-col gap-2 items-center">
       <h1 className="text-xl font-medium">{title}</h1>
       <p className="font-vt323 text-base text-center">{description}</p>
-      <div className="h-2 w-2 bg-purple-400 rounded-full" />
+      <div className="h-2 w-2 bg-blue-400 rounded-full" />
     </div>
   )
 }

@@ -1,11 +1,24 @@
 import clsx from 'clsx'
 import { motion } from 'motion/react'
 import { useState } from 'react'
+import { AppWindowMacIcon, TrophyIcon, BrainIcon } from 'lucide-react'
 
 const TAB_MENU = [
-  { id: 'introduction', title: 'Introduction' },
-  { id: 'certificates', title: 'Certificates' },
-  { id: 'skills', title: 'Skills' },
+  {
+    id: 'introduction',
+    title: 'Introduction',
+    icon: <AppWindowMacIcon className="text-inherit" />,
+  },
+  {
+    id: 'certificates',
+    title: 'Certificates',
+    icon: <TrophyIcon className="text-inherit" />,
+  },
+  {
+    id: 'skills',
+    title: 'Skills',
+    icon: <BrainIcon className="text-inherit" />,
+  },
 ]
 
 export default function AboutMe() {
@@ -23,17 +36,20 @@ export default function AboutMe() {
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={clsx(
-                'relative cursor-pointer px-2 py-1 text-sm outline-none transition-colors',
+                'relative flex flex-row gap-2.5 cursor-pointer px-2 py-1 text-sm outline-none transition-colors',
                 activeTab === tab.id ? 'text-gray-800' : 'text-gray-700'
               )}
             >
               {activeTab === tab.id ? (
                 <motion.div
                   layoutId="tab-indicator"
-                  className="absolute inset-0 rounded-lg bg-white/5"
+                  className="absolute inset-0 rounded-lg bg-blue-400"
                 />
               ) : null}
-              <span className="relative text-inherit">{tab.title}</span>
+              <span className="relative z-10">{tab.icon}</span>
+              <h1 className="relative z-10 text-inherit text-base">
+                {tab.title}
+              </h1>
             </motion.div>
           ))}
         </div>
