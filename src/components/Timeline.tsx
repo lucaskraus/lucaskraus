@@ -41,18 +41,19 @@ const TimelineItem = ({ title, description }: TimelineItemProps) => {
 
 export default function Timeline() {
   return (
-    <div className="flex flex-col gap-10 flex-wrap">
+    <div className="flex flex-col gap-10">
       <div className="flex flex-col items-center w-full gap-2">
         <h1 className="text-2xl font-medium">Career</h1>
         <p className="text-base">A brief overview of my career until now</p>
       </div>
-      <div className="flex flex-row w-full gap-12 items-center justify-center">
+      <div className="flex flex-row w-full gap-12 items-center justify-center flex-wrap">
         {TIMELINE_ITEMS.map((item, index) => (
           <motion.div
             key={item.title}
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 + index * 0.1, ease: 'easeInOut' }}
+            className="max-w-44"
           >
             <TimelineItem
               key={item.title}
