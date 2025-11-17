@@ -8,7 +8,10 @@ function App() {
     <div className="flex h-screen w-screen flex-col relative">
       <DarkVeil speed={1.5} />
       <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center px-20 py-16 gap-24">
-        <Header items={['Home', 'About', 'Contact']} onPress={() => {}} />
+        <Header
+          items={['Skills', 'Career', 'Projects', 'Talk with me']}
+          onPress={() => {}}
+        />
         <div className="flex flex-row justify-center gap-16 items-center w-full">
           <ProfileCard />
           <div className="flex flex-col gap-6">
