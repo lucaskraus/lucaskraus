@@ -11,7 +11,7 @@ function App() {
         <Header items={['Home', 'About', 'Contact']} onPress={() => {}} />
         <div className="flex flex-row justify-center gap-16 items-center w-full">
           <ProfileCard />
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-6">
             <h2 className="text-2xl">
               My name is{' '}
               <span className="font-bold text-blue-500">Lucas Kraus</span> and I
