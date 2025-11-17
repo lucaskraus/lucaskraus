@@ -13,7 +13,7 @@ function App() {
         <div className="flex flex-row justify-center gap-16 items-center w-full">
           <ProfileCard
             name="lucaskraus"
-            title=""
+            title="Software Engineer"
             handle="javicodes"
             status="Online"
             contactText="Contact Me"
