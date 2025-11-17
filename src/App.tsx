@@ -2,7 +2,7 @@ import Header from '@/components/Header'
 import ProfileCard from '@/components/ProfileCard'
 import Introduction from '@/components/Introduction'
 import Timeline from '@/components/Timeline'
-import Projects from './components/Projects'
+import Repositories from '@/components/Repositories'
 import './App.css'
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
           <Introduction />
         </div>
         <Timeline />
-        <Projects />
+        <Repositories />
       </div>
     </div>
   )
