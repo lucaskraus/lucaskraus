@@ -3,6 +3,7 @@ import './App.css'
 import Header from '@/components/Header'
 import ProfileCard from '@/components/ProfileCard'
 import Introduction from '@/components/Introduction'
+import Timeline from '@/components/Timeline'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <ProfileCard />
           <Introduction />
         </div>
+        <Timeline />
       </div>
     </div>
   )
