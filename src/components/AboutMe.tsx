@@ -95,7 +95,7 @@ export default function AboutMe() {
           ))}
         </div>
         <div className="relative">
-          <div className="absolute top-22 left-18 max-w-64 max-h-40 overflow-y-auto scrollbar-hide">
+          <div className="absolute top-22 left-18 max-w-64 max-h-42 overflow-y-auto scrollbar-hide">
             <TabCard id={activeTab} />
           </div>
           <img src={macintoshImage} alt="Macintosh" width={400} />
