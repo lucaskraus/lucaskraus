@@ -22,7 +22,7 @@ const TAB_MENU = [
 ]
 
 export default function AboutMe() {
-  const [activeTab, setActiveTab] = useState<string>('about')
+  const [activeTab, setActiveTab] = useState<string>('introduction')
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-col items-center w-full gap-2">

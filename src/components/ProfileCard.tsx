@@ -8,7 +8,13 @@ export default function ProfileCard() {
         <Github />
         <h1 className="text-2xl font-vt323">lucaskraus</h1>
       </div>
-      <img src={profilePicture} className="-mb-4" alt="Profile" width={300} />
+      <img
+        src={profilePicture}
+        className="-mb-4"
+        alt="Profile"
+        width={300}
+        loading="lazy"
+      />
     </div>
   )
 }

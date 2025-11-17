@@ -6,7 +6,10 @@ export default function Introduction() {
         and I am a
       </h2>
       <h1 className="text-4xl font-medium">Mobile & Front-End Engineer</h1>
-      <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vue,nuxtjs,tailwind,nodejs,$theme=dark" />
+      <img
+        src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vue,nuxtjs,tailwind,nodejs,$theme=dark"
+        loading="lazy"
+      />
     </div>
   )
 }
