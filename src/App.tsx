@@ -7,8 +7,7 @@ import Timeline from '@/components/Timeline'
 
 function App() {
   return (
-    <div className="flex h-screen w-screen flex-col relative">
-      <DarkVeil speed={1.5} />
+    <div className="flex h-screen w-screen flex-col relative overflow-x-hidden overflow-y-auto">
       <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center px-20 py-16 gap-24">
         <Header
           items={['Skills', 'Career', 'Projects', 'Talk with me']}
