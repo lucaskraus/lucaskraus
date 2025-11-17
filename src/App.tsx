@@ -17,7 +17,7 @@ function App() {
               <span className="font-bold text-blue-500">Lucas Kraus</span> and I
               am a
             </h2>
-            <h1 className="text-4xl font-bold">Software Engineer</h1>
+            <h1 className="text-4xl font-medium">Software Engineer</h1>
             <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vue,nuxtjs,tailwind,nodejs,$theme=dark" />
           </div>
         </div>
