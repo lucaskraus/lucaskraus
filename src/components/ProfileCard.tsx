@@ -1,6 +1,53 @@
 import { Github, Linkedin, Twitter, Mail, Globe } from 'lucide-react';
+import { motion, useMotionValue, useSpring, useTransform } from 'motion/react';
+import { useRef } from 'react';
 
 export default function ProfileCard() {
+  const cardRef = useRef<HTMLDivElement>(null);
+  
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+  
+  // Create smooth spring animations with increased intensity
+  const rotateX = useSpring(useTransform(mouseY, [-0.5, 0.5], [20, -20]), {
+    stiffness: 400,
+    damping: 20
+  });
+  const rotateY = useSpring(useTransform(mouseX, [-0.5, 0.5], [-20, 20]), {
+    stiffness: 400,
+    damping: 20
+  });
+  
+  const translateZ = useSpring(0, {
+    stiffness: 400,
+    damping: 20
+  });
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!cardRef.current) return;
+    
+    const rect = cardRef.current.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height / 2;
+    
+    // Calculate normalized position (-0.5 to 0.5) and clamp to prevent extreme values
+    const normalizedX = Math.max(-0.5, Math.min(0.5, (e.clientX - centerX) / (rect.width / 2)));
+    const normalizedY = Math.max(-0.5, Math.min(0.5, (e.clientY - centerY) / (rect.height / 2)));
+    
+    mouseX.set(normalizedX);
+    mouseY.set(normalizedY);
+  };
+  
+  const handleHoverStart = () => {
+    translateZ.set(50);
+  };
+  
+  const handleHoverEnd = () => {
+    mouseX.set(0);
+    mouseY.set(0);
+    translateZ.set(0);
+  };
+
   const socialLinks = [
     {
       name: 'GitHub',
@@ -35,7 +82,23 @@ export default function ProfileCard() {
   ];
 
   return (
-    <div className='flex rounded-xl metallic-button p-4'></div>
+    <div style={{ perspective: '1000px' }}>
+      <motion.div
+        ref={cardRef}
+        className='flex rounded-xl metallic-button px-6 py-4 flex-col gap-4'
+        style={{
+          transformStyle: 'preserve-3d',
+          rotateX,
+          rotateY,
+          translateZ,
+        }}
+        onMouseMove={handleMouseMove}
+        onHoverStart={handleHoverStart}
+        onHoverEnd={handleHoverEnd}
+      >
+        <h1 className='text-3xl font-vt323'>Lucas Kraus</h1>
+      </motion.div>
+    </div>
   );
 }
 
