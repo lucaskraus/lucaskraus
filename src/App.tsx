@@ -18,7 +18,7 @@ function App() {
       hoverFillColor="#222222"
       className="w-full"
     >
-      <div className="w-full flex flex-col items-center p-16 gap-24">
+      <div className="w-full flex flex-col items-center pt-8 pb-12 px-16 gap-24">
         <div className="flex flex-col w-full gap-10">
           <Header
             items={['About Me', 'Career', 'Repositories', 'Get in touch']}
