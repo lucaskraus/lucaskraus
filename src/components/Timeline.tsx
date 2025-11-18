@@ -14,7 +14,7 @@ const TIMELINE_ITEMS = [
   },
   {
     title: '2020',
-    label: "Started my bachelor's degree in Computer Science",
+    label: "Started my bachelor's degree in CS",
     description: "Started my bachelor's degree in Computer Science",
   },
   {
@@ -61,10 +61,10 @@ const TimelineCard = ({ title, label, description }: TimelineItemProps) => {
         </motion.p>
       </div>
 
-      <div className="flex flex-col flex-1 h-full gap-2 py-2">
+      <div className="flex flex-col flex-1 h-full gap-2 pt-4">
         <motion.h2
           layoutId={`timeline-label-${label}`}
-          className="text-sm text-left"
+          className="text-sm text-left font-medium"
         >
           {label}
         </motion.h2>
