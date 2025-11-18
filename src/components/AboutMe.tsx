@@ -10,7 +10,7 @@ const TAB_MENU = [
     title: 'Introduction',
     icon: <AppWindowMacIcon className="text-inherit" />,
     content:
-      'Mobile & Front-End Engineer with over 8 years of experience in the industry. Specialized in building scalable and efficient web applications using React Native, React, Next.js, Vue.js, Nuxt.js, Tailwind CSS, and Node.js.',
+      'Mobile & Front-End Engineer with over 8 years of experience in the industry. Specialized in building scalable and efficient web and mobile applications using React Native, React, Next.js, Vue.js, Nuxt.js, Tailwind CSS, and Node.js.',
   },
   {
     id: 'certificates',
