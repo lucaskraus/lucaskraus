@@ -1,4 +1,4 @@
-import { motion } from 'motion/react'
+import { AnimatePresence, motion } from 'motion/react'
 import { useState } from 'react'
 
 const TIMELINE_ITEMS = [
@@ -43,7 +43,10 @@ interface TimelineItemProps {
 
 const TimelineCard = ({ title, label, description }: TimelineItemProps) => {
   return (
-    <motion.div className="flex flex-row gap-2 items-center rounded-xl p-4 bg-gray-400">
+    <motion.div
+      layoutId={`timeline-item-${title}`}
+      className="flex flex-row gap-2 items-center rounded-xl p-4 bg-gray-400"
+    >
       <div className="flex flex-col gap-2">
         <img
           src="/logo.svg"
@@ -51,7 +54,7 @@ const TimelineCard = ({ title, label, description }: TimelineItemProps) => {
           className="w-10 h-10 rounded-full"
         />
         <motion.p
-          layoutId={`timeline-card-title-${title}`}
+          layoutId={`timeline-title-${title}`}
           className="font-vt323 text-lg text-center"
         >
           {title}
@@ -60,13 +63,13 @@ const TimelineCard = ({ title, label, description }: TimelineItemProps) => {
 
       <div className="flex flex-col w-64 items-center justify-center">
         <motion.h2
-          layoutId={`timeline-card-label-${label}`}
+          layoutId={`timeline-label-${label}`}
           className="text-xl font-vt323"
         >
           {label}
         </motion.h2>
         <motion.p
-          layoutId={`timeline-card-description-${title}`}
+          layoutId={`timeline-description-${title}`}
           className="font-vt323 text-lg text-center"
         >
           {description}
@@ -82,26 +85,33 @@ const TimelineItem = ({
   description,
   selected,
 }: TimelineItemProps) => {
-  return selected ? (
-    <TimelineCard title={title} label={label} description={description} />
-  ) : (
-    <div className="flex flex-col gap-2 items-center">
-      <motion.h1
-        layoutId={`timeline-item-title-${title}`}
-        className="text-xl font-medium"
-      >
-        {title}
-      </motion.h1>
-      <motion.p
-        layoutId={`timeline-item-label-${title}`}
-        className="font-vt323 text-lg text-center"
-      >
-        {label}
-      </motion.p>
-      <div className="relative flex items-center justify-center">
-        <div className="h-2 w-2 bg-blue-400 rounded-full" />
-      </div>
-    </div>
+  return (
+    <AnimatePresence mode="wait" initial={false}>
+      {selected ? (
+        <TimelineCard title={title} label={label} description={description} />
+      ) : (
+        <motion.div
+          layoutId={`timeline-item-${title}`}
+          className="flex flex-col gap-2 items-center max-w-48"
+        >
+          <motion.p
+            layoutId={`timeline-label-${title}`}
+            className="font-vt323 text-lg text-center"
+          >
+            {label}
+          </motion.p>
+          <motion.h1
+            layoutId={`timeline-title-${title}`}
+            className="text-xl font-medium"
+          >
+            {title}
+          </motion.h1>
+          <div className="relative flex items-center justify-center">
+            <div className="h-2 w-2 bg-blue-400 rounded-full animate-pulse" />
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   )
 }
 
@@ -121,16 +131,11 @@ export default function Timeline() {
         </div>
       </div>
       <div className="flex flex-row w-full gap-12 items-center justify-center flex-wrap">
-        {TIMELINE_ITEMS.map((item, index) => (
+        {TIMELINE_ITEMS.map(item => (
           <motion.div
-            key={item.title}
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 + index * 0.1, ease: 'easeInOut' }}
-            className="max-w-48 cursor-pointer"
+            className="cursor-pointer"
             onClick={() => setSelectedItem(item)}
             role="button"
-            tabIndex={0}
           >
             <TimelineItem
               key={item.title}
