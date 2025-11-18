@@ -47,7 +47,7 @@ const TabCard = ({ id }: { id: string }) => {
             delay: index * delayBetweenWords,
             duration: animationDuration,
           }}
-          className="text-green-400 font-vt323 text-2xl"
+          className="text-green-400 font-vt323 text-2xl select-none"
         >
           {word}
         </motion.span>
