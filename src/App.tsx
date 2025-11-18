@@ -14,7 +14,7 @@ function App() {
           items={['About Me', 'Career', 'Repositories', 'Talk with me']}
           onPress={() => {}}
         />
-        <div className="flex flex-row justify-center gap-28 items-center w-full">
+        <div className="flex flex-row justify-center gap-24 items-center w-full">
           <Picture />
           <Introduction />
         </div>
