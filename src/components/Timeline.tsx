@@ -1,5 +1,5 @@
 import { motion, LayoutGroup } from 'motion/react'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, Activity } from 'react'
 import feiBackgroundImage from '@/assets/fei.png'
 import firstDevXpBackgroundImage from '@/assets/first-dev-xp.png'
 import xendoraBackgroundImage from '@/assets/xendora.png'
@@ -53,27 +53,32 @@ const TimelineItem = ({
   description,
   selected,
 }: ITimelineItem) => {
-  return selected ? (
-    <TimelineCard
-      title={title}
-      label={label}
-      description={description}
-      image={image}
-    />
-  ) : (
-    <motion.div
-      initial={false}
-      layout
-      layoutId={`timeline-item-${title}`}
-      className="flex flex-col gap-2 items-center max-w-48"
-      style={{ borderRadius: 16 }}
-    >
-      <p className="text-base text-center">{label}</p>
-      <h1 className="text-xl font-medium font-vt323">{title}</h1>
-      <div className="relative flex items-center justify-center">
-        <div className="h-2 w-2 bg-blue-400 rounded-full animate-pulse" />
-      </div>
-    </motion.div>
+  return (
+    <>
+      <Activity mode={selected ? 'visible' : 'hidden'}>
+        <TimelineCard
+          title={title}
+          label={label}
+          description={description}
+          image={image}
+        />
+      </Activity>
+      <Activity mode={selected ? 'hidden' : 'visible'}>
+        <motion.div
+          initial={false}
+          layout
+          layoutId={`timeline-item-${title}`}
+          className="flex flex-col gap-2 items-center max-w-48"
+          style={{ borderRadius: 16 }}
+        >
+          <p className="text-base text-center">{label}</p>
+          <h1 className="text-xl font-medium font-vt323">{title}</h1>
+          <div className="relative flex items-center justify-center">
+            <div className="h-2 w-2 bg-blue-400 rounded-full animate-pulse" />
+          </div>
+        </motion.div>
+      </Activity>
+    </>
   )
 }
 
