@@ -5,6 +5,7 @@ import Repositories from '@/components/Repositories'
 import AboutMe from '@/components/AboutMe'
 import Picture from '@/components/Picture'
 import Squares from '@/components/Squares'
+import Quote from '@/components/Quote'
 import './App.css'
 
 function App() {
@@ -18,10 +19,12 @@ function App() {
       className="w-full"
     >
       <div className="w-full flex flex-col items-center p-16 gap-24">
-        <Header
-          items={['About Me', 'Career', 'Repositories', 'Get in touch']}
-          onPress={() => {}}
-        />
+        <div className="flex flex-col w-full gap-10">
+          <Header
+            items={['About Me', 'Career', 'Repositories', 'Get in touch']}
+            onPress={() => {}}
+          />
+        </div>
         <div className="flex flex-row justify-center gap-24 items-center w-full">
           <Picture />
           <Introduction />
@@ -29,6 +32,7 @@ function App() {
         <AboutMe />
         <Timeline />
         <Repositories />
+        <Quote />
       </div>
     </Squares>
   )

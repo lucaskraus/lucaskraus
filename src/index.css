@@ -79,6 +79,7 @@ body {
 @theme inline {
   --font-vt323: 'VT323', monospace;
   --font-roboto-mono: 'Roboto Mono', monospace;
+  --font-playfair-display: 'Playfair Display', serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
