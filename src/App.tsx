@@ -3,6 +3,7 @@ import Introduction from '@/components/Introduction'
 import Timeline from '@/components/Timeline'
 import Repositories from '@/components/Repositories'
 import AboutMe from '@/components/AboutMe'
+import Picture from '@/components/Picture'
 import './App.css'
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
           items={['About Me', 'Career', 'Repositories', 'Talk with me']}
           onPress={() => {}}
         />
-        <div className="flex flex-row justify-center gap-32 items-center w-full">
-          <div className="flex flex-row gap-4"></div>
+        <div className="flex flex-row justify-center gap-28 items-center w-full">
+          <Picture />
           <Introduction />
         </div>
         <AboutMe />
