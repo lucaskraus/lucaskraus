@@ -1,10 +1,12 @@
-import { motion } from 'motion/react'
-import { useState } from 'react'
+import { motion, LayoutGroup } from 'motion/react'
+import { useEffect, useState } from 'react'
 import feiBackgroundImage from '@/assets/fei.png'
 import firstDevXpBackgroundImage from '@/assets/first-dev-xp.png'
 import xendoraBackgroundImage from '@/assets/xendora.png'
 import finishedBackgroundImage from '@/assets/finish.png'
 import startJourneyBackgroundImage from '@/assets/start-journey.jpg'
+import TimelineCard from '@/components/TimelineCard'
+import type { ITimelineItem } from '@/@types'
 
 const TIMELINE_ITEMS = [
   {
@@ -44,41 +46,13 @@ const TIMELINE_ITEMS = [
   },
 ]
 
-interface TimelineItemProps {
-  title: string
-  label: string
-  description: string
-  selected?: boolean
-  image?: string
-}
-
-const TimelineCard = ({ title, description, image }: TimelineItemProps) => {
-  return (
-    <motion.div
-      layoutId={`timeline-item-${title}`}
-      className="flex gap-2.5 rounded-2xl px-4 py-2 w-80 h-28 shadow-md border border-gray-400 relative will-change-transform"
-      style={{
-        backgroundImage: `url(${image})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
-      <div className="absolute inset-0 bg-black/50 rounded-2xl" />
-      <div className="flex flex-col flex-1 h-full gap-2 w-full z-10">
-        <h2 className="text-lg text-left font-medium font-vt323">{title}</h2>
-        <p className="text-xs text-left">{description}</p>
-      </div>
-    </motion.div>
-  )
-}
-
 const TimelineItem = ({
   title,
   label,
   image,
   description,
   selected,
-}: TimelineItemProps) => {
+}: ITimelineItem) => {
   return selected ? (
     <TimelineCard
       title={title}
@@ -88,9 +62,11 @@ const TimelineItem = ({
     />
   ) : (
     <motion.div
-      key={title}
+      initial={false}
+      layout
       layoutId={`timeline-item-${title}`}
       className="flex flex-col gap-2 items-center max-w-48"
+      style={{ borderRadius: 16 }}
     >
       <p className="text-base text-center">{label}</p>
       <h1 className="text-xl font-medium font-vt323">{title}</h1>
@@ -102,9 +78,17 @@ const TimelineItem = ({
 }
 
 export default function Timeline() {
-  const [selectedItem, setSelectedItem] = useState<TimelineItemProps | null>(
+  const [selectedItem, setSelectedItem] = useState<ITimelineItem | null>(
     TIMELINE_ITEMS[0]
   )
+
+  useEffect(() => {
+    const urls = TIMELINE_ITEMS.map(i => i.image).filter(Boolean) as string[]
+    urls.forEach(src => {
+      const img = new Image()
+      img.src = src
+    })
+  }, [])
 
   return (
     <div className="flex flex-col gap-10">
@@ -116,24 +100,30 @@ export default function Timeline() {
           </p>
         </div>
       </div>
-      <div className="flex flex-row w-full gap-12 items-center justify-center flex-wrap">
-        {TIMELINE_ITEMS.map(item => (
-          <div
-            className="cursor-pointer"
-            onClick={() => setSelectedItem(item)}
-            role="button"
-          >
-            <TimelineItem
+      <LayoutGroup id="timeline">
+        <motion.div
+          initial={false}
+          layout
+          className="flex flex-row w-full gap-12 items-center justify-center flex-wrap"
+        >
+          {TIMELINE_ITEMS.map(item => (
+            <div
               key={item.title}
-              title={item.title}
-              label={item.label}
-              description={item.description}
-              selected={selectedItem?.title === item.title}
-              image={item.image}
-            />
-          </div>
-        ))}
-      </div>
+              className="cursor-pointer"
+              onClick={() => setSelectedItem(item)}
+              role="button"
+            >
+              <TimelineItem
+                title={item.title}
+                label={item.label}
+                description={item.description}
+                selected={selectedItem?.title === item.title}
+                image={item.image}
+              />
+            </div>
+          ))}
+        </motion.div>
+      </LayoutGroup>
     </div>
   )
 }
