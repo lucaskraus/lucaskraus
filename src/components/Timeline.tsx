@@ -3,12 +3,15 @@ import { useState } from 'react'
 import feiBackgroundImage from '@/assets/fei.png'
 import firstDevXpBackgroundImage from '@/assets/first-dev-xp.png'
 import xendoraBackgroundImage from '@/assets/xendora.png'
+import finishedBackgroundImage from '@/assets/finish.png'
+import startJourneyBackgroundImage from '@/assets/start-journey.jpg'
 
 const TIMELINE_ITEMS = [
   {
     title: '2017',
     label: 'Started my journey as intern',
     description: 'Started my journey as intern',
+    image: startJourneyBackgroundImage,
   },
   {
     title: '2019',
@@ -37,6 +40,7 @@ const TIMELINE_ITEMS = [
     title: '2024',
     label: "Finished my bachelor's degree",
     description: "Finished my bachelor's degree",
+    image: finishedBackgroundImage,
   },
 ]
 
