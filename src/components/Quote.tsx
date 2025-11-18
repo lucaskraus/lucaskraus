@@ -4,7 +4,7 @@ export default function Quote() {
       <h1 className="font-playfair-display text-xl">
         Make it work, make it right, make it fast.
       </h1>
-      <p className="font-medium">- Kent Beck</p>
+      <p className="font-bold text-center font-playfair-display">- Kent Beck</p>
     </div>
   )
 }
