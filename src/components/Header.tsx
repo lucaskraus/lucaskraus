@@ -5,11 +5,11 @@ interface HeaderProps {
 
 export default function Header({ items, onPress }: HeaderProps) {
   return (
-    <div className="flex flex-row w-full px-6 py-2 items-center justify-between rounded-full backdrop-blur-2xl border border-white/10">
+    <div className="flex flex-row w-full px-6 py-2 items-center justify-between rounded-full backdrop-blur-sm border border-white/10">
       <div>
         <img src="/logo.svg" alt="Logo" className="w-10 h-10" />
       </div>
-      <div className="flex flex-row gap-4">
+      <div className="flex flex-row gap-6">
         {items.map(item => (
           <button key={item} onClick={() => onPress(item)}>
             {item}

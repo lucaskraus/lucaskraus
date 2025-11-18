@@ -19,7 +19,7 @@ function App() {
     >
       <div className="w-full flex flex-col items-center p-16 gap-24">
         <Header
-          items={['About Me', 'Career', 'Repositories', 'Talk with me']}
+          items={['About Me', 'Career', 'Repositories', 'Get in touch']}
           onPress={() => {}}
         />
         <div className="flex flex-row justify-center gap-24 items-center w-full">
