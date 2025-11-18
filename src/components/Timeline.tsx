@@ -1,5 +1,5 @@
 import { motion, LayoutGroup } from 'motion/react'
-import { useEffect, useState, Activity } from 'react'
+import { useState, Activity } from 'react'
 import feiBackgroundImage from '@/assets/fei.png'
 import firstDevXpBackgroundImage from '@/assets/first-dev-xp.png'
 import xendoraBackgroundImage from '@/assets/xendora.png'
@@ -46,6 +46,18 @@ const TIMELINE_ITEMS = [
   },
 ]
 
+const TimelineLoadImages = () => {
+  return (
+    <div className="hidden">
+      <img src={startJourneyBackgroundImage} alt="Start Journey" />
+      <img src={feiBackgroundImage} alt="FEI" />
+      <img src={firstDevXpBackgroundImage} alt="First Dev XP" />
+      <img src={xendoraBackgroundImage} alt="Xendora" />
+      <img src={finishedBackgroundImage} alt="Finished" />
+    </div>
+  )
+}
+
 const TimelineItem = ({
   title,
   label,
@@ -87,16 +99,10 @@ export default function Timeline() {
     TIMELINE_ITEMS[0]
   )
 
-  useEffect(() => {
-    const urls = TIMELINE_ITEMS.map(i => i.image).filter(Boolean) as string[]
-    urls.forEach(src => {
-      const img = new Image()
-      img.src = src
-    })
-  }, [])
-
   return (
     <div className="flex flex-col gap-10">
+      {/* Dumb component to load images before they are used */}
+      <TimelineLoadImages />
       <div className="flex flex-row items-center justify-center">
         <div className="flex flex-col items-center w-full gap-2">
           <h1 className="text-2xl font-medium select-none">Career</h1>
