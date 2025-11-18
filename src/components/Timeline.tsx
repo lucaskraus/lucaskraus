@@ -45,7 +45,7 @@ const TimelineCard = ({ title, label, description }: TimelineItemProps) => {
   return (
     <motion.div
       layoutId={`timeline-item-${title}`}
-      className="flex flex-row gap-4 items-center rounded-2xl px-4 w-80 h-28 bg-gray-400 shadow-md"
+      className="flex flex-row gap-4 items-center rounded-2xl px-4 w-80 h-28 bg-linear-to-r from-blue-500 to-blue-800 shadow-md border border-gray-100"
     >
       <div className="flex flex-col gap-2">
         <img
