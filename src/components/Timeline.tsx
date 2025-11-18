@@ -45,7 +45,7 @@ const TimelineCard = ({ title, label, description }: TimelineItemProps) => {
   return (
     <motion.div
       layoutId={`timeline-item-${title}`}
-      className="flex flex-row gap-2 items-center rounded-xl p-4 bg-gray-400"
+      className="flex flex-row gap-4 items-center rounded-2xl px-4 w-80 h-28 bg-gray-400 shadow-md"
     >
       <div className="flex flex-col gap-2">
         <img
@@ -61,16 +61,16 @@ const TimelineCard = ({ title, label, description }: TimelineItemProps) => {
         </motion.p>
       </div>
 
-      <div className="flex flex-col w-64 items-center justify-center">
+      <div className="flex flex-col flex-1 h-full gap-2 py-2">
         <motion.h2
           layoutId={`timeline-label-${label}`}
-          className="text-xl font-vt323"
+          className="text-sm text-left"
         >
           {label}
         </motion.h2>
         <motion.p
           layoutId={`timeline-description-${title}`}
-          className="font-vt323 text-lg text-center"
+          className="text-xs text-left"
         >
           {description}
         </motion.p>
