@@ -1,5 +1,8 @@
 import { AnimatePresence, motion } from 'motion/react'
 import { useState } from 'react'
+import feiBackgroundImage from '@/assets/fei.png'
+import firstDevXpBackgroundImage from '@/assets/first-dev-xp.png'
+import xendoraBackgroundImage from '@/assets/xendora.png'
 
 const TIMELINE_ITEMS = [
   {
@@ -16,16 +19,19 @@ const TIMELINE_ITEMS = [
     title: '2020',
     label: "Started my bachelor's degree in CS",
     description: "Started my bachelor's degree in Computer Science",
+    image: feiBackgroundImage,
   },
   {
     title: '2021',
     label: 'My first developer experience',
     description: 'My first developer experience',
+    image: firstDevXpBackgroundImage,
   },
   {
     title: '2023',
     label: 'Joined Xendora as Front-End Engineer',
     description: 'Joined Xendora as Front-End Engineer',
+    image: xendoraBackgroundImage,
   },
   {
     title: '2024',
@@ -39,34 +45,27 @@ interface TimelineItemProps {
   label: string
   description: string
   selected?: boolean
+  image?: string
 }
 
-const TimelineCard = ({ title, label, description }: TimelineItemProps) => {
+const TimelineCard = ({ title, description, image }: TimelineItemProps) => {
   return (
     <motion.div
       layoutId={`timeline-item-${title}`}
-      className="flex flex-row gap-4 items-center rounded-2xl px-4 w-80 h-28 bg-linear-to-r from-blue-500 to-blue-800 shadow-md border border-gray-100"
+      className="flex gap-2.5 rounded-2xl px-4 py-2 w-80 h-28 shadow-md border border-gray-400 relative will-change-transform"
+      style={{
+        backgroundImage: `url(${image})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
-      <div className="flex flex-col gap-2">
-        <img
-          src="/logo.svg"
-          alt="card image"
-          className="w-10 h-10 rounded-full"
-        />
-        <motion.p
-          layoutId={`timeline-title-${title}`}
-          className="font-vt323 text-lg text-center"
+      <div className="absolute inset-0 bg-black/50 rounded-2xl" />
+      <div className="flex flex-col flex-1 h-full gap-2 w-full z-10">
+        <motion.h2
+          layoutId={`timeline-label-${title}`}
+          className="text-lg text-left font-medium font-vt323"
         >
           {title}
-        </motion.p>
-      </div>
-
-      <div className="flex flex-col flex-1 h-full gap-2 pt-4">
-        <motion.h2
-          layoutId={`timeline-label-${label}`}
-          className="text-sm text-left font-medium"
-        >
-          {label}
         </motion.h2>
         <motion.p
           layoutId={`timeline-description-${title}`}
@@ -82,13 +81,19 @@ const TimelineCard = ({ title, label, description }: TimelineItemProps) => {
 const TimelineItem = ({
   title,
   label,
+  image,
   description,
   selected,
 }: TimelineItemProps) => {
   return (
     <AnimatePresence mode="wait" initial={false}>
       {selected ? (
-        <TimelineCard title={title} label={label} description={description} />
+        <TimelineCard
+          title={title}
+          label={label}
+          description={description}
+          image={image}
+        />
       ) : (
         <motion.div
           layoutId={`timeline-item-${title}`}
@@ -96,13 +101,13 @@ const TimelineItem = ({
         >
           <motion.p
             layoutId={`timeline-label-${title}`}
-            className="font-vt323 text-lg text-center"
+            className="text-base text-center"
           >
             {label}
           </motion.p>
           <motion.h1
             layoutId={`timeline-title-${title}`}
-            className="text-xl font-medium"
+            className="text-xl font-medium font-vt323"
           >
             {title}
           </motion.h1>
@@ -143,6 +148,7 @@ export default function Timeline() {
               label={item.label}
               description={item.description}
               selected={selectedItem?.title === item.title}
+              image={item.image}
             />
           </motion.div>
         ))}
