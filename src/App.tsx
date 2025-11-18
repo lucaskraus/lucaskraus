@@ -9,15 +9,15 @@ import './App.css'
 
 function App() {
   return (
-    <div className="flex h-screen w-screen flex-col relative overflow-x-hidden overflow-y-auto">
-      <Squares
-        speed={0.3}
-        squareSize={40}
-        direction="diagonal"
-        borderColor="#271e37"
-        hoverFillColor="#222222"
-      />
-      <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center p-16 gap-24">
+    <Squares
+      speed={0.3}
+      squareSize={40}
+      direction="diagonal"
+      borderColor="#271e37"
+      hoverFillColor="#222222"
+      className="w-full"
+    >
+      <div className="w-full flex flex-col items-center p-16 gap-24">
         <Header
           items={['About Me', 'Career', 'Repositories', 'Talk with me']}
           onPress={() => {}}
@@ -30,7 +30,7 @@ function App() {
         <Timeline />
         <Repositories />
       </div>
-    </div>
+    </Squares>
   )
 }
 

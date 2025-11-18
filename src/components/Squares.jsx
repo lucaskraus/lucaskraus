@@ -8,7 +8,9 @@ const Squares = ({
   squareSize = 40,
   hoverFillColor = '#222',
   className = '',
+  children,
 }) => {
+  const containerRef = useRef(null)
   const canvasRef = useRef(null)
   const requestRef = useRef(null)
   const numSquaresX = useRef()
@@ -17,18 +19,28 @@ const Squares = ({
   const hoveredSquare = useRef(null)
 
   useEffect(() => {
+    const container = containerRef.current
     const canvas = canvasRef.current
     const ctx = canvas.getContext('2d')
 
     const resizeCanvas = () => {
-      canvas.width = canvas.offsetWidth
-      canvas.height = canvas.offsetHeight
+      const width = container ? container.offsetWidth : canvas.offsetWidth
+      const height = container ? container.offsetHeight : canvas.offsetHeight
+      canvas.width = width
+      canvas.height = height
       numSquaresX.current = Math.ceil(canvas.width / squareSize) + 1
       numSquaresY.current = Math.ceil(canvas.height / squareSize) + 1
     }
 
     window.addEventListener('resize', resizeCanvas)
     resizeCanvas()
+    let resizeObserver
+    if (container && 'ResizeObserver' in window) {
+      resizeObserver = new ResizeObserver(() => {
+        resizeCanvas()
+      })
+      resizeObserver.observe(container)
+    }
 
     const drawGrid = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height)
@@ -140,11 +152,20 @@ const Squares = ({
       cancelAnimationFrame(requestRef.current)
       canvas.removeEventListener('mousemove', handleMouseMove)
       canvas.removeEventListener('mouseleave', handleMouseLeave)
+      if (resizeObserver) {
+        resizeObserver.disconnect()
+      }
     }
   }, [direction, speed, borderColor, hoverFillColor, squareSize])
 
   return (
-    <canvas ref={canvasRef} className={`squares-canvas ${className}`}></canvas>
+    <div ref={containerRef} className={`relative w-full ${className}`}>
+      <canvas
+        ref={canvasRef}
+        className="squares-canvas absolute inset-0 z-0"
+      ></canvas>
+      <div className="relative z-10">{children}</div>
+    </div>
   )
 }
 
