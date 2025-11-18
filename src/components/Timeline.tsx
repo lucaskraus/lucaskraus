@@ -5,6 +5,7 @@ import firstDevXpBackgroundImage from '@/assets/first-dev-xp.png'
 import xendoraBackgroundImage from '@/assets/xendora.png'
 import finishedBackgroundImage from '@/assets/finish.png'
 import startJourneyBackgroundImage from '@/assets/start-journey.jpg'
+import recognitionBackgroundImage from '@/assets/recognition.png'
 import TimelineCard from '@/components/TimelineCard'
 import type { ITimelineItem } from '@/@types'
 
@@ -19,6 +20,7 @@ const TIMELINE_ITEMS = [
     title: '2019',
     label: 'Recognition for professional excellence',
     description: 'Recognition for professional excellence',
+    image: recognitionBackgroundImage,
   },
   {
     title: '2020',
@@ -49,11 +51,9 @@ const TIMELINE_ITEMS = [
 const TimelineLoadImages = () => {
   return (
     <div className="hidden">
-      <img src={startJourneyBackgroundImage} alt="Start Journey" />
-      <img src={feiBackgroundImage} alt="FEI" />
-      <img src={firstDevXpBackgroundImage} alt="First Dev XP" />
-      <img src={xendoraBackgroundImage} alt="Xendora" />
-      <img src={finishedBackgroundImage} alt="Finished" />
+      {TIMELINE_ITEMS.map(item => (
+        <img key={item.title} src={item.image} alt={item.title} />
+      ))}
     </div>
   )
 }
