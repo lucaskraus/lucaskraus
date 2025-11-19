@@ -23,7 +23,7 @@ export default function TimelineCard({
     <motion.div
       layout
       layoutId={`timeline-item-${title}`}
-      className="flex gap-2.5 px-4 py-2 w-80 h-36 shadow-md border border-gray-400 relative will-change-transform"
+      className="flex gap-2.5 px-4 py-2 w-80 h-36 shadow-md border border-[#271e37] relative will-change-transform"
       style={{
         borderRadius: 16,
         backgroundImage: `url(${image})`,
