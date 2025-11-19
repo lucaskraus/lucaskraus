@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, VT323, Roboto_Mono, Playfair_Display } from 'next/font/google'
-import { Toaster } from "@/components/ui/sonner"
+import { Toaster } from '@/components/ui/sonner'
 import './globals.css'
 
 const inter = Inter({
