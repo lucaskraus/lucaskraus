@@ -6,6 +6,7 @@ import AboutMe from '@/components/AboutMe'
 import Picture from '@/components/Picture'
 import Squares from '@/components/Squares'
 import Quote from '@/components/Quote'
+import GetInTouch from '@/components/GetInTouch'
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <AboutMe />
         <Timeline />
         <WhereToFindMe />
+        <GetInTouch />
         <Quote />
       </div>
     </Squares>
