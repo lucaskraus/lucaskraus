@@ -25,7 +25,7 @@ export default function SocialMediaCard({
       target="_blank"
       rel="noopener noreferrer"
       className="relative block w-full h-60 overflow-hidden rounded-2xl cursor-pointer bg-card group"
-      initial={{ opacity: 0.8, scale: 1 }}
+      animate={{ opacity: 0.65, scale: 1 }}
       whileHover={{ opacity: 1, scale: 1.02 }}
       transition={{ duration: 0.2, ease: 'easeOut' }}
     >
