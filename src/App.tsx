@@ -1,7 +1,7 @@
 import Header from '@/components/Header'
 import Introduction from '@/components/Introduction'
 import Timeline from '@/components/Timeline'
-import Repositories from '@/components/Repositories'
+import WhereToFindMe from '@/components/WhereToFindMe'
 import AboutMe from '@/components/AboutMe'
 import Picture from '@/components/Picture'
 import Squares from '@/components/Squares'
@@ -31,7 +31,7 @@ function App() {
         </div>
         <AboutMe />
         <Timeline />
-        <Repositories />
+        <WhereToFindMe />
         <Quote />
       </div>
     </Squares>
