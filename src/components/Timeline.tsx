@@ -53,7 +53,7 @@ const TIMELINE_ITEMS = [
 
 const TimelineLoadImages = () => {
   return (
-    <div className="hidden">
+    <div className="max-h-0 overflow-hidden">
       {TIMELINE_ITEMS.map(item => (
         <Image key={item.title} src={item.image} alt={item.title} />
       ))}
