@@ -19,7 +19,7 @@ export default function TimelineCard({
       className="flex gap-2.5 px-4 py-2 w-80 h-36 shadow-md border border-[#271e37] relative will-change-transform"
       style={{
         borderRadius: 16,
-        backgroundImage: `url(${image})`,
+        backgroundImage: `url(${image?.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
