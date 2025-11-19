@@ -51,7 +51,7 @@ export default function GetInTouch() {
   }
 
   return (
-    <div className="flex flex-col gap-10 w-full max-w-lg">
+    <div className="flex flex-col gap-10 w-full max-w-lg mx-auto">
       <div className="flex flex-row items-center justify-center">
         <div className="flex flex-col items-center w-full gap-2">
           <h1 className="text-2xl font-medium select-none">Get in Touch</h1>

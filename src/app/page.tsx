@@ -9,6 +9,13 @@ import Quote from '@/components/Quote'
 import GetInTouch from '@/components/GetInTouch'
 
 export default function Home() {
+  const navItems = [
+    { label: 'About Me', id: 'about-me' },
+    { label: 'Career', id: 'career' },
+    { label: 'Where to find me', id: 'where-to-find-me' },
+    { label: 'Get in touch', id: 'get-in-touch' },
+  ]
+
   return (
     <Squares
       speed={0.3}
@@ -19,19 +26,25 @@ export default function Home() {
       className="w-full"
     >
       <div className="w-full flex flex-col items-center pt-8 pb-12 px-16 gap-24">
-        <div className="flex flex-col w-full gap-10">
-          <Header
-            items={['About Me', 'Career', 'Where to find me', 'Get in touch']}
-          />
+        <div className="flex flex-col w-full gap-10 sticky top-0 z-50">
+          <Header items={navItems} />
         </div>
         <div className="flex flex-row justify-center gap-24 items-center w-full">
           <Picture />
           <Introduction />
         </div>
-        <AboutMe />
-        <Timeline />
-        <WhereToFindMe />
-        <GetInTouch />
+        <section id="about-me" className="scroll-mt-32">
+          <AboutMe />
+        </section>
+        <section id="career" className="scroll-mt-32">
+          <Timeline />
+        </section>
+        <section id="where-to-find-me" className="scroll-mt-32 w-full">
+          <WhereToFindMe />
+        </section>
+        <section id="get-in-touch" className="scroll-mt-32 w-full">
+          <GetInTouch />
+        </section>
         <Quote />
       </div>
     </Squares>
