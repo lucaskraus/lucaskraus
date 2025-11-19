@@ -1,7 +1,10 @@
+'use client'
+
 import clsx from 'clsx'
 import { motion } from 'motion/react'
 import { useState } from 'react'
 import { AppWindowMacIcon, TrophyIcon, BrainIcon } from 'lucide-react'
+import Image from 'next/image'
 import macintoshImage from '@/assets/macintosh.png'
 
 const TAB_MENU = [
@@ -98,7 +101,7 @@ export default function AboutMe() {
           <div className="absolute top-22 left-18 max-w-64 max-h-42 overflow-y-auto scrollbar-hide">
             <TabCard id={activeTab} />
           </div>
-          <img src={macintoshImage} alt="Macintosh" width={400} />
+          <Image src={macintoshImage} alt="Macintosh" width={400} />
         </div>
       </div>
     </div>

@@ -1,3 +1,5 @@
+'use client'
+
 import { motion, LayoutGroup } from 'motion/react'
 import { useState, Activity } from 'react'
 import feiBackgroundImage from '@/assets/fei.png'
@@ -8,6 +10,7 @@ import startJourneyBackgroundImage from '@/assets/start-journey.jpg'
 import recognitionBackgroundImage from '@/assets/recognition.png'
 import TimelineCard from '@/components/TimelineCard'
 import type { ITimelineItem } from '@/@types'
+import Image from 'next/image'
 
 const TIMELINE_ITEMS = [
   {
@@ -52,7 +55,7 @@ const TimelineLoadImages = () => {
   return (
     <div className="hidden">
       {TIMELINE_ITEMS.map(item => (
-        <img key={item.title} src={item.image} alt={item.title} />
+        <Image key={item.title} src={item.image} alt={item.title} />
       ))}
     </div>
   )

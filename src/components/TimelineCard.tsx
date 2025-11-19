@@ -1,12 +1,5 @@
 import { motion } from 'motion/react'
-
-interface TimelineItemProps {
-  title: string
-  label: string
-  description: string
-  selected?: boolean
-  image?: string
-}
+import type { ITimelineItem } from '@/@types'
 
 const LAYOUT_TRANSITION = {
   type: 'spring' as const,
@@ -18,7 +11,7 @@ export default function TimelineCard({
   title,
   description,
   image,
-}: TimelineItemProps) {
+}: ITimelineItem) {
   return (
     <motion.div
       layout
