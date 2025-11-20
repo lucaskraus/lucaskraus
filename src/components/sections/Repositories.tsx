@@ -117,7 +117,7 @@ export default function Repositories() {
               key={repo.id}
               onClick={() => setActiveRepo(repo.id)}
               className={clsx(
-                'relative flex flex-row items-center justify-center gap-2 px-4 py-2 text-sm font-medium rounded-lg outline-none transition-colors',
+                'relative flex flex-row items-center justify-center gap-2 px-4 py-2 text-sm font-medium rounded-lg outline-none transition-all active:scale-95 cursor-pointer duration-200',
                 activeRepo === repo.id
                   ? 'text-gray-900'
                   : 'text-gray-400 hover:text-gray-200'
