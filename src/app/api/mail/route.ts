@@ -27,7 +27,7 @@ async function sendEmailToSender(name: string, email: string) {
       from: 'no-reply@kraustechconsult.com.br',
       to: email,
       subject: 'Thank you for your message',
-      html: `<p>Thank you for your message, ${name}. We will get back to you soon.</p>`,
+      html: `<p>Thank you for your message, ${name}. I will get back to you soon.</p>`,
     })
   } catch (error) {
     console.error('Failed to send confirmation email:', error)
