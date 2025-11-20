@@ -1,5 +1,8 @@
 import { NextResponse } from 'next/server'
-import { sendEmailToSender, sendEmailToMe } from '@/services/contact.service'
+import {
+  sendEmailToSender,
+  sendEmailToMe,
+} from '@/modules/contact/contact.service'
 
 export async function POST(request: Request) {
   const { name, email, company, message } = await request.json()
