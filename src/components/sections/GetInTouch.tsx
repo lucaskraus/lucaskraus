@@ -23,6 +23,7 @@ const contactSchema = z.object({
 
 export default function GetInTouch() {
   const [errors, setErrors] = useState<Record<string, string[] | undefined>>({})
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const clearError = (field: string) => {
     setErrors(prev => {
@@ -35,6 +36,8 @@ export default function GetInTouch() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    setIsSubmitting(true)
+
     const formData = new FormData(e.currentTarget)
     const data = Object.fromEntries(formData.entries())
 
@@ -66,6 +69,7 @@ export default function GetInTouch() {
     } finally {
       setErrors({})
       toast.success('Message sent successfully!')
+      setIsSubmitting(false)
       e.currentTarget.reset()
     }
   }
@@ -134,7 +138,11 @@ export default function GetInTouch() {
               />
             </Field>
             <div className="flex w-full items-center justify-end">
-              <Button type="submit" className="w-fit mt-2">
+              <Button
+                type="submit"
+                className="w-fit mt-2"
+                disabled={isSubmitting}
+              >
                 Send Message
               </Button>
             </div>
