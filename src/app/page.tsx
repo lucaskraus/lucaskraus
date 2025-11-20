@@ -1,12 +1,12 @@
 import Header from '@/components/Header'
 import Introduction from '@/components/Introduction'
-import Timeline from '@/components/Timeline'
-import WhereToFindMe from '@/components/WhereToFindMe'
-import AboutMe from '@/components/AboutMe'
+import Timeline from '@/components/sections/Timeline'
+import WhereToFindMe from '@/components/sections/WhereToFindMe'
+import AboutMe from '@/components/sections/AboutMe'
 import Picture from '@/components/Picture'
 import Squares from '@/components/Squares'
-import Quote from '@/components/Quote'
-import GetInTouch from '@/components/GetInTouch'
+import Quote from '@/components/sections/Quote'
+import GetInTouch from '@/components/sections/GetInTouch'
 
 export default function Home() {
   const navItems = [

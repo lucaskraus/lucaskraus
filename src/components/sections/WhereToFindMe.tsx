@@ -1,7 +1,7 @@
 import githubProfileImage from '@/assets/github-profile.png'
 import linkedinProfileImage from '@/assets/linkedin-profile.png'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import SocialMediaCard from '@/components/SocialMediaCard'
+import SocialMediaCard from '@/components/cards/SocialMediaCard'
 
 export default function Projects() {
   const SOCIAL_MEDIA = [

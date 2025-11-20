@@ -8,7 +8,7 @@ import xendoraBackgroundImage from '@/assets/xendora.png'
 import finishedBackgroundImage from '@/assets/finish.png'
 import startJourneyBackgroundImage from '@/assets/start-journey.jpg'
 import recognitionBackgroundImage from '@/assets/recognition.png'
-import TimelineCard from '@/components/TimelineCard'
+import TimelineCard from '@/components/cards/TimelineCard'
 import type { ITimelineItem } from '@/@types'
 import Image from 'next/image'
 
