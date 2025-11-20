@@ -24,6 +24,15 @@ const contactSchema = z.object({
 export default function GetInTouch() {
   const [errors, setErrors] = useState<Record<string, string[] | undefined>>({})
 
+  const clearError = (field: string) => {
+    setErrors(prev => {
+      if (!prev[field]) return prev
+      const newErrors = { ...prev }
+      delete newErrors[field]
+      return newErrors
+    })
+  }
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const formData = new FormData(e.currentTarget)
@@ -66,7 +75,12 @@ export default function GetInTouch() {
           <FieldGroup>
             <Field>
               <FieldLabel htmlFor="name">Name</FieldLabel>
-              <Input id="name" name="name" placeholder="Your name" />
+              <Input
+                id="name"
+                name="name"
+                placeholder="Your name"
+                onChange={() => clearError('name')}
+              />
               <FieldError
                 errors={errors.name?.map(msg => ({ message: msg }))}
               />
@@ -78,6 +92,7 @@ export default function GetInTouch() {
                 name="email"
                 type="email"
                 placeholder="your@email.com"
+                onChange={() => clearError('email')}
               />
               <FieldError
                 errors={errors.email?.map(msg => ({ message: msg }))}
@@ -85,7 +100,12 @@ export default function GetInTouch() {
             </Field>
             <Field>
               <FieldLabel htmlFor="company">Company</FieldLabel>
-              <Input id="company" name="company" placeholder="Your company" />
+              <Input
+                id="company"
+                name="company"
+                placeholder="Your company"
+                onChange={() => clearError('company')}
+              />
               <FieldError
                 errors={errors.company?.map(msg => ({ message: msg }))}
               />
@@ -97,6 +117,7 @@ export default function GetInTouch() {
                 name="message"
                 placeholder="Tell me about your project..."
                 className="min-h-[120px]"
+                onChange={() => clearError('message')}
               />
               <FieldError
                 errors={errors.message?.map(msg => ({ message: msg }))}
