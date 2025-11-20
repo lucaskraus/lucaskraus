@@ -13,6 +13,7 @@ import {
 } from '@/components/ui/field'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
+import { LoadingSpinner } from '@/components/LoadingSpinner'
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -36,9 +37,10 @@ export default function GetInTouch() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    const form = e.currentTarget
     setIsSubmitting(true)
 
-    const formData = new FormData(e.currentTarget)
+    const formData = new FormData(form)
     const data = Object.fromEntries(formData.entries())
 
     const result = contactSchema.safeParse(data)
@@ -55,6 +57,7 @@ export default function GetInTouch() {
         }
       })
       setErrors(fieldErrors)
+      setIsSubmitting(false)
       return
     }
 
@@ -70,7 +73,7 @@ export default function GetInTouch() {
       setErrors({})
       toast.success('Message sent successfully!')
       setIsSubmitting(false)
-      e.currentTarget.reset()
+      form.reset()
     }
   }
 
@@ -143,7 +146,7 @@ export default function GetInTouch() {
                 className="w-fit mt-2"
                 disabled={isSubmitting}
               >
-                Send Message
+                {isSubmitting ? <LoadingSpinner /> : 'Send Message'}
               </Button>
             </div>
           </FieldGroup>
