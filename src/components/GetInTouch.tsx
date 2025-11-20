@@ -16,6 +16,7 @@ import { Textarea } from '@/components/ui/textarea'
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
+  email: z.string().email('Please enter a valid email address'),
   company: z.string().optional(),
   message: z.string().min(10, 'Message must be at least 10 characters'),
 })
@@ -71,6 +72,18 @@ export default function GetInTouch() {
               />
             </Field>
             <Field>
+              <FieldLabel htmlFor="email">Email</FieldLabel>
+              <Input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="your@email.com"
+              />
+              <FieldError
+                errors={errors.email?.map(msg => ({ message: msg }))}
+              />
+            </Field>
+            <Field>
               <FieldLabel htmlFor="company">Company</FieldLabel>
               <Input id="company" name="company" placeholder="Your company" />
               <FieldError
@@ -82,7 +95,7 @@ export default function GetInTouch() {
               <Textarea
                 id="message"
                 name="message"
-                placeholder="Tell us about your project..."
+                placeholder="Tell me about your project..."
                 className="min-h-[120px]"
               />
               <FieldError
