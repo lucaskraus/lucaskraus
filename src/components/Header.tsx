@@ -24,7 +24,7 @@ export default function Header({ items }: HeaderProps) {
           <button
             key={item.label}
             onClick={() => scrollToSection(item.id)}
-            className="hover:text-primary transition-colors cursor-pointer"
+            className="hover:text-primary active:scale-95 transition-all duration-300 cursor-pointer"
           >
             {item.label}
           </button>

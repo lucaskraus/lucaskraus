@@ -29,7 +29,7 @@ export default function Home() {
         <div className="flex flex-col w-full gap-10 sticky top-0 z-50">
           <Header items={navItems} />
         </div>
-        <div className="flex flex-row justify-center gap-24 items-center w-full">
+        <div className="flex flex-col justify-center items-center w-full -mt-8">
           <Picture />
           <Introduction />
         </div>

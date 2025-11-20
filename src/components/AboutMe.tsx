@@ -73,14 +73,14 @@ export default function AboutMe() {
         <h1 className="text-2xl font-medium">About Me</h1>
       </div>
       <div className="flex flex-col gap-6 items-center w-full mx-auto max-w-5xl">
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-row gap-3">
           {TAB_MENU.map(tab => (
             <motion.div
               layout
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={clsx(
-                'relative flex flex-row items-center gap-2.5 cursor-pointer px-2 py-1 text-sm outline-none transition-colors',
+                'relative flex flex-row items-center gap-2.5 cursor-pointer px-2 py-2 text-sm outline-none transition-colors',
                 activeTab === tab.id ? 'text-gray-800' : 'text-gray-700'
               )}
             >
@@ -91,7 +91,7 @@ export default function AboutMe() {
                 />
               ) : null}
               <span className="relative z-10">{tab.icon}</span>
-              <h1 className="relative z-10 text-inherit text-lg font-vt323">
+              <h1 className="relative z-10 text-inherit text-sm">
                 {tab.title}
               </h1>
             </motion.div>
