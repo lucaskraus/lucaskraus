@@ -7,11 +7,13 @@ import Picture from '@/components/Picture'
 import Squares from '@/components/Squares'
 import Quote from '@/components/sections/Quote'
 import GetInTouch from '@/components/sections/GetInTouch'
+import Repositories from '@/components/sections/Repositories'
 
 export default function Home() {
   const navItems = [
     { label: 'About Me', id: 'about-me' },
     { label: 'Career', id: 'career' },
+    { label: 'Projects', id: 'projects' },
     { label: 'Where to find me', id: 'where-to-find-me' },
     { label: 'Get in touch', id: 'get-in-touch' },
   ]
@@ -38,6 +40,9 @@ export default function Home() {
         </section>
         <section id="career" className="scroll-mt-32">
           <Timeline />
+        </section>
+        <section id="projects" className="scroll-mt-32 w-full">
+          <Repositories />
         </section>
         <section id="where-to-find-me" className="scroll-mt-32 w-full">
           <WhereToFindMe />
