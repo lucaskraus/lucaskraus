@@ -41,6 +41,7 @@ export async function POST(request: Request) {
   try {
     await sendEmailToSender(name, email)
   } catch (error) {
+    console.error('Failed to send confirmation email:', error)
     return NextResponse.json(
       { error: 'Unable to send confirmation email' },
       { status: 500 }
