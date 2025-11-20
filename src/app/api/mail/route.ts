@@ -3,9 +3,12 @@ import {
   sendEmailToSender,
   sendEmailToMe,
 } from '@/modules/contact/contact.service'
+import { formContactSchema } from '@/modules/contact/contact.schema'
 
 export async function POST(request: Request) {
-  const { name, email, company, message } = await request.json()
+  const { name, email, company, message } = formContactSchema.parse(
+    await request.json()
+  )
 
   try {
     await sendEmailToSender(name, email)

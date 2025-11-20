@@ -14,13 +14,7 @@ import {
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { LoadingSpinner } from '@/components/LoadingSpinner'
-
-const contactSchema = z.object({
-  name: z.string().min(2, 'Name must be at least 2 characters'),
-  email: z.email('Please enter a valid email address'),
-  company: z.string().optional(),
-  message: z.string().min(10, 'Message must be at least 10 characters'),
-})
+import { formContactSchema } from '@/modules/contact/contact.schema'
 
 export default function GetInTouch() {
   const [errors, setErrors] = useState<Record<string, string[] | undefined>>({})
@@ -43,7 +37,7 @@ export default function GetInTouch() {
     const formData = new FormData(form)
     const data = Object.fromEntries(formData.entries())
 
-    const result = contactSchema.safeParse(data)
+    const result = formContactSchema.safeParse(data)
 
     if (!result.success) {
       const fieldErrors: Record<string, string[]> = {}
