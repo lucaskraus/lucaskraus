@@ -13,7 +13,7 @@ export default function Projects() {
     },
     {
       name: 'LinkedIn',
-      link: 'https://www.linkedin.com/in/lucas-kraus-monteiro-alves-00200b252/',
+      link: 'https://www.linkedin.com/in/lucas-kraus-00200b252/',
       image: linkedinProfileImage,
       icon: faLinkedin,
       iconColor: '#0077B5',

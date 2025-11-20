@@ -11,9 +11,7 @@ export default function Picture() {
         <Image src={notionFacePng} alt="Notion Face" width={200} />
       </div>
       <div className="flex flex-col gap-2">
-        <p className="text-lg font-light text-center">
-          Hello, World! My name is{' '}
-        </p>
+        <p className="text-lg text-center">Hello, World! My name is </p>
         <motion.h1
           className="bg-clip-text text-4xl leading-tight font-bold text-transparent select-none text-center"
           style={{
