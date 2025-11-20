@@ -33,7 +33,7 @@ export default function GetInTouch() {
     })
   }
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const formData = new FormData(e.currentTarget)
     const data = Object.fromEntries(formData.entries())
@@ -55,9 +55,19 @@ export default function GetInTouch() {
       return
     }
 
-    setErrors({})
-    toast.success('Message sent successfully!')
-    e.currentTarget.reset()
+    try {
+      await fetch('/api/mail', {
+        method: 'POST',
+        body: JSON.stringify(data),
+      })
+    } catch (error) {
+      console.error(error)
+      toast.error('Failed to send message')
+    } finally {
+      setErrors({})
+      toast.success('Message sent successfully!')
+      e.currentTarget.reset()
+    }
   }
 
   return (
