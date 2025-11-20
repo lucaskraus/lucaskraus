@@ -38,6 +38,7 @@ export default function SocialMediaCard({
           objectPosition: title === 'GitHub' ? 'top' : 'center',
         }}
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        unoptimized
       />
       <div
         className="absolute bottom-4 right-4 z-10 drop-shadow-md"
