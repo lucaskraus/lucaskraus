@@ -14,7 +14,7 @@ export default function RepositoryCard({ repository }: RepositoryCardProps) {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.3 }}
-      className="flex flex-col gap-4 p-6 border border-[#271e37] rounded-xl bg-black/30  w-full"
+      className="flex flex-col gap-4 p-6 border justify-between border-[#271e37] rounded-xl bg-black/30  w-full"
     >
       <div className="flex flex-col gap-2">
         <div className="flex flex-row items-center justify-between">
