@@ -58,7 +58,7 @@ export default function AboutMe() {
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={clsx(
-                'relative flex flex-row items-center gap-2.5 cursor-pointer px-2 py-2 text-sm outline-none transition-colors',
+                'relative flex flex-row items-center gap-2.5 cursor-pointer px-2 py-2 outline-none transition-colors',
                 activeTab === tab.id ? 'text-gray-800' : 'text-gray-700'
               )}
             >
@@ -69,17 +69,22 @@ export default function AboutMe() {
                 />
               ) : null}
               <span className="relative z-10">{tab.icon}</span>
-              <h1 className="relative z-10 text-inherit text-sm">
+              <h1 className="relative z-10 text-inherit text-xs lg:text-sm">
                 {tab.title}
               </h1>
             </motion.div>
           ))}
         </div>
         <div className="relative">
-          <div className="absolute top-22 left-18 max-w-66 max-h-42 overflow-y-auto scrollbar-hide">
+          <div className="absolute top-22 left-20 max-w-66 max-h-44 overflow-y-auto scrollbar-hide">
             <TabContent id={activeTab} />
           </div>
-          <Image src={macintoshImage} alt="Macintosh" width={400} />
+          <div className="flex flex-col gap-2 items-center">
+            <Image src={macintoshImage} alt="Macintosh" width={400} />
+            <span className="text-xs text-gray-500 italic">
+              You can scroll down the Macintosh screen to read the content
+            </span>
+          </div>
         </div>
       </div>
     </div>

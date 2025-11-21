@@ -85,7 +85,7 @@ export default function Repositories() {
               key={repo.id}
               onClick={() => setActiveRepo(repo.id)}
               className={clsx(
-                'relative flex flex-row items-center justify-center gap-2 lg:px-4 lg:py-2 px-2 py-1 text-sm font-medium rounded-lg outline-none transition-all active:scale-95 cursor-pointer duration-200',
+                'relative flex flex-row items-center justify-center gap-2 lg:px-4 lg:py-2 px-2 py-1 rounded-lg outline-none transition-all active:scale-95 cursor-pointer duration-200',
                 activeRepo === repo.id
                   ? 'text-gray-900'
                   : 'text-gray-400 hover:text-gray-200'
@@ -98,7 +98,7 @@ export default function Repositories() {
                   transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
                 />
               )}
-              <span className="relative z-10 text-base lg:text-xs">
+              <span className="relative z-10 text-xs lg:text-sm">
                 {repo.shortTitle}
               </span>
             </button>

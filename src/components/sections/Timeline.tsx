@@ -24,7 +24,7 @@ const TimelineItem = ({
           className="flex flex-col gap-2.5 items-center max-w-none lg:max-w-48"
           style={{ borderRadius: 16 }}
         >
-          <p className="text-base text-center">{label}</p>
+          <p className="text-lg lg:text-base text-center">{label}</p>
           <h1 className="text-xl font-medium font-vt323">{title}</h1>
           <div className="relative flex items-center justify-center">
             <div className="h-3 w-3 bg-blue-400 rounded-full animate-pulse" />

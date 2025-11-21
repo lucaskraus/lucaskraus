@@ -29,19 +29,15 @@ export default function Introduction() {
     <div className="flex lg:flex-row flex-col lg:gap-20 gap-10 items-center">
       {INTRODUCTION_ITEMS.map(item => (
         <div className="flex flex-col gap-2" key={item.label}>
-          <div className="flex flex-row items-center justify-center gap-2">
+          <div className="flex flex-row items-center gap-2">
             {item.icon}
-            <span className="text-gray-500 text-center lg:text-left">
-              {item.label}
-            </span>
+            <span className="text-gray-500">{item.label}</span>
           </div>
-          <h1 className="text-xl font-medium text-center lg:text-left">
-            {item.value}
-          </h1>
+          <h1 className="text-xl font-medium">{item.value}</h1>
         </div>
       ))}
       <div className="flex flex-col gap-2">
-        <div className="flex flex-row items-center justify-center lg:justify-start gap-2">
+        <div className="flex flex-row items-center gap-2">
           <CodeXmlIcon className="size-4 text-gray-500" />
           <span className="text-gray-500">Main Skills</span>
         </div>

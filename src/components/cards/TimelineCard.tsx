@@ -16,7 +16,7 @@ export default function TimelineCard({
     <motion.div
       layout
       layoutId={`timeline-item-${title}`}
-      className="flex px-4 py-2 w-84 h-40 shadow-md border border-[#271e37] relative will-change-transform overflow-hidden"
+      className="flex px-4 py-2 lg:w-84 h-40 shadow-md border border-[#271e37] relative will-change-transform overflow-hidden"
       style={{
         borderRadius: 16,
       }}
