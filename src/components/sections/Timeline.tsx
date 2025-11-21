@@ -11,6 +11,7 @@ import recognitionBackgroundImage from '@/assets/recognition.png'
 import TimelineCard from '@/components/cards/TimelineCard'
 import type { ITimelineItem } from '@/@types'
 import Image from 'next/image'
+import clsx from 'clsx'
 
 const TIMELINE_ITEMS = [
   {
@@ -69,15 +70,7 @@ const TimelineItem = ({
   selected,
 }: ITimelineItem) => {
   return (
-    <>
-      <Activity mode={selected ? 'visible' : 'hidden'}>
-        <TimelineCard
-          title={title}
-          label={label}
-          description={description}
-          image={image}
-        />
-      </Activity>
+    <div className="flex flex-row items-center">
       <Activity mode={selected ? 'hidden' : 'visible'}>
         <motion.div
           initial={false}
@@ -93,7 +86,17 @@ const TimelineItem = ({
           </div>
         </motion.div>
       </Activity>
-    </>
+      <div
+        className={clsx(selected ? 'max-w-none' : 'max-w-0 overflow-hidden')}
+      >
+        <TimelineCard
+          title={title}
+          label={label}
+          description={description}
+          image={image}
+        />
+      </div>
+    </div>
   )
 }
 
