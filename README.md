@@ -21,7 +21,7 @@ You can check my certifications and certificates in <a href="https://github.com/
 
 <h3 align="left">Where to find me:</h3>
 
-[![Find Me](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/lucas-kraus-monteiro-alves-00200b252/)
+[![Find Me](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/lucas-kraus-00200b252/)
 <br> 
 <br>
 
