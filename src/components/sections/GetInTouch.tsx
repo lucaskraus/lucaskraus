@@ -63,9 +63,10 @@ export default function GetInTouch() {
       setErrors({})
       setIsSubmitting(false)
       toast.error(response.statusText || `Error: ${response.status}`)
-      throw new Error(response.statusText || `Error: ${response.status}`)
+      throw new Error('Failed to send message')
     }
 
+    form.reset()
     setErrors({})
     setIsSubmitting(false)
     toast.success('Message sent successfully!')
