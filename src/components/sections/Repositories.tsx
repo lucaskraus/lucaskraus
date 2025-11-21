@@ -3,7 +3,9 @@
 import clsx from 'clsx'
 import { motion } from 'motion/react'
 import { useState } from 'react'
-import { FolderGit2, ExternalLink, Layers, Code2, Terminal } from 'lucide-react'
+import { FolderGit2, Layers, Code2, Terminal } from 'lucide-react'
+import RepositoryCard from '../cards/RepositoryCard'
+import { IRepository } from '@/@types'
 
 const REPOSITORIES = [
   {
@@ -48,55 +50,6 @@ const REPOSITORIES = [
   },
 ]
 
-const RepoDetail = ({ id }: { id: string }) => {
-  const repo = REPOSITORIES.find(r => r.id === id)
-  if (!repo) return null
-
-  return (
-    <motion.div
-      key={id}
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -10 }}
-      transition={{ duration: 0.3 }}
-      className="flex flex-col gap-4 p-6 border border-[#271e37] rounded-xl bg-black/20  w-full"
-    >
-      <div className="flex flex-col gap-2">
-        <div className="flex flex-row items-center justify-between">
-          <h3 className="text-2xl font-medium font-vt323 text-green-400">
-            {repo.title}
-          </h3>
-          <a
-            href={repo.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition-colors"
-          >
-            <ExternalLink size={20} />
-          </a>
-        </div>
-        <p className="text-gray-300 leading-relaxed">{repo.description}</p>
-      </div>
-
-      <div className="flex flex-col gap-2 mt-2">
-        <span className="text-sm text-gray-500 uppercase tracking-wider font-semibold">
-          Technologies
-        </span>
-        <div className="flex flex-row flex-wrap gap-2">
-          {repo.technologies.map((tech, index) => (
-            <span
-              key={index}
-              className="px-3 py-1 text-xs font-medium rounded-full bg-[#271e37] text-green-400 border border-green-400/20"
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
-      </div>
-    </motion.div>
-  )
-}
-
 export default function Repositories() {
   const [activeRepo, setActiveRepo] = useState<string>(REPOSITORIES[0].id)
 
@@ -137,7 +90,11 @@ export default function Repositories() {
 
         {/* Content Area */}
         <div className="w-full flex justify-center h-[240px]">
-          <RepoDetail id={activeRepo} />
+          <RepositoryCard
+            repository={
+              REPOSITORIES.find(r => r.id === activeRepo) as IRepository
+            }
+          />
         </div>
       </div>
     </div>
