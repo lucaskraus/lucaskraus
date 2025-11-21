@@ -30,14 +30,14 @@ export const ABOUT_ME_TAB_MENU = [
     title: 'Skills',
     icon: <BrainIcon className="text-inherit" />,
     content:
-      'Front-End: React, Next.js, Vue.js, Nuxt.js, Tailwind CSS\n' +
-      'Mobile: React Native (Expo), Nativewind, Reanimated\n' +
-      'Web3: Ethers.js, Wagmi, Reown\n' +
-      'Back-End: Node.js, Fastify, REST APIs\n' +
-      'Databases: MySQL, PostgreSQL, SQLite, Prisma, Knex.js\n' +
-      'Cloud: AWS (S3, RDS, SQS/SNS)\n' +
-      'Tooling: Git, GitHub Actions, CI/CD, Sentry\n' +
-      'Other: UI/UX, Figma, Linux, Docker',
+      '• Front-End: React, Next.js, Vue.js, Nuxt.js, Tailwind CSS\n' +
+      '• Mobile: React Native (Expo), Nativewind, Reanimated\n' +
+      '• Web3: Ethers.js, Wagmi, Reown\n' +
+      '• Back-End: Node.js, Fastify, REST APIs\n' +
+      '• Databases: MySQL, PostgreSQL, SQLite, Prisma, Knex.js\n' +
+      '• Cloud: AWS (S3, RDS, SQS/SNS)\n' +
+      '• Tooling: Git, GitHub Actions, CI/CD, Sentry\n' +
+      '• Other: UI/UX, Figma, Linux, Docker',
   },
 ]
 
