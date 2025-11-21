@@ -21,7 +21,7 @@ const TimelineItem = ({
           initial={false}
           layout
           layoutId={`timeline-item-${title}`}
-          className="flex flex-col gap-2.5 items-center max-w-48"
+          className="flex flex-col gap-2.5 items-center max-w-none lg:max-w-48"
           style={{ borderRadius: 16 }}
         >
           <p className="text-base text-center">{label}</p>
@@ -54,8 +54,10 @@ export default function Timeline() {
     <div className="flex flex-col gap-10">
       <div className="flex flex-row items-center justify-center">
         <div className="flex flex-col items-center w-full gap-2">
-          <h1 className="text-2xl font-medium select-none">Career</h1>
-          <p className="text-lg select-none">
+          <h1 className="text-2xl font-medium select-none text-center">
+            Career
+          </h1>
+          <p className="text-lg select-none text-center">
             A brief overview of my career until now
           </p>
         </div>
@@ -64,7 +66,7 @@ export default function Timeline() {
         <motion.div
           initial={false}
           layout
-          className="flex flex-row w-full gap-12 items-center justify-center flex-wrap"
+          className="flex flex-col lg:flex-row w-full lg:gap-12 gap-4 items-center justify-center"
         >
           {TIMELINE_ITEMS.map(item => (
             <div

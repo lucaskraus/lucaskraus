@@ -77,15 +77,15 @@ export default function Repositories() {
         </p>
       </div>
 
-      <div className="flex flex-row gap-8 items-start w-full max-w-5xl">
+      <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 items-start w-full lg:max-w-5xl">
         {/* Navigation Menu */}
-        <div className="flex flex-col justify-center gap-3 min-w-40">
+        <div className="flex lg:flex-col flex-row justify-center gap-3 min-w-40">
           {REPOSITORIES.map(repo => (
             <button
               key={repo.id}
               onClick={() => setActiveRepo(repo.id)}
               className={clsx(
-                'relative flex flex-row items-center justify-center gap-2 px-4 py-2 text-sm font-medium rounded-lg outline-none transition-all active:scale-95 cursor-pointer duration-200',
+                'relative flex flex-row items-center justify-center gap-2 lg:px-4 lg:py-2 px-2 py-1 text-sm font-medium rounded-lg outline-none transition-all active:scale-95 cursor-pointer duration-200',
                 activeRepo === repo.id
                   ? 'text-gray-900'
                   : 'text-gray-400 hover:text-gray-200'
@@ -98,13 +98,15 @@ export default function Repositories() {
                   transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
                 />
               )}
-              <span className="relative z-10">{repo.shortTitle}</span>
+              <span className="relative z-10 text-base lg:text-xs">
+                {repo.shortTitle}
+              </span>
             </button>
           ))}
         </div>
 
         {/* Content Area */}
-        <div className="w-full flex justify-center h-[240px]">
+        <div className="w-full flex justify-center lg:h-[240px] h-auto">
           <RepositoryCard
             repository={
               REPOSITORIES.find(r => r.id === activeRepo) as IRepository

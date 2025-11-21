@@ -13,7 +13,7 @@ export default function Picture() {
       <div className="flex flex-col">
         <p className="text-lg text-center">Hello, World! My name is </p>
         <motion.h1
-          className="bg-clip-text text-5xl leading-tight font-bold text-transparent select-none text-center"
+          className="bg-clip-text text-2xl lg:text-5xl leading-tight font-bold text-transparent select-none text-center"
           style={{
             backgroundImage:
               'linear-gradient(90deg, #60a5fa, #93c5fd 20%, #2563eb 40%, #93c5fd 60%, #60a5fa 80%)',

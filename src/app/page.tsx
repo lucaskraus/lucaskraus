@@ -27,11 +27,11 @@ export default function Home() {
       hoverFillColor="#222222"
       className="w-full"
     >
-      <div className="w-full flex flex-col items-center pt-8 pb-12 px-16 gap-28">
+      <div className="w-full flex flex-col items-center pt-8 pb-12 lg:px-16 px-3 gap-28">
         <div className="flex flex-col w-full gap-10 sticky top-0 z-50">
           <Header items={navItems} />
         </div>
-        <div className="flex flex-col justify-center items-center w-full -mt-10">
+        <div className="flex flex-col justify-center items-center w-full -mt-10 gap-10 lg:gap-0">
           <Picture />
           <Introduction />
         </div>
