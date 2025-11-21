@@ -15,7 +15,7 @@ export default function Header({ items }: HeaderProps) {
   }
 
   return (
-    <div className="sticky top-8 z-50 flex flex-row w-full px-6 py-3 items-center justify-between rounded-full backdrop-blur-xs border border-white/10 bg-black/10">
+    <div className="sticky top-8 z-50 flex flex-row w-full px-6 py-4 items-center justify-between rounded-full backdrop-blur-xs border border-white/10 bg-black/10">
       <div>
         <MessageCircleCodeIcon className="size-6 text-white" />
       </div>
