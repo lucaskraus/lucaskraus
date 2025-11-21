@@ -8,7 +8,7 @@ import macintoshImage from '@/assets/macintosh.png'
 import { ABOUT_ME_TAB_MENU } from '@/lib/constants'
 import { useTypewriterLines } from '@/hooks/useTypewriterLines'
 
-const TabCard = ({ id }: { id: string }) => {
+const TabContent = ({ id }: { id: string }) => {
   const section = ABOUT_ME_TAB_MENU.find(tab => tab.id === id)
   const { words, totalAnimationTime, animationDuration, delayBetweenWords } =
     useTypewriterLines(section?.content)
@@ -77,7 +77,7 @@ export default function AboutMe() {
         </div>
         <div className="relative">
           <div className="absolute top-22 left-18 max-w-66 max-h-42 overflow-y-auto scrollbar-hide">
-            <TabCard id={activeTab} />
+            <TabContent id={activeTab} />
           </div>
           <Image src={macintoshImage} alt="Macintosh" width={400} />
         </div>
