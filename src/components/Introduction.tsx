@@ -26,9 +26,12 @@ const INTRODUCTION_ITEMS = [
 
 export default function Introduction() {
   return (
-    <div className="flex lg:flex-row flex-col lg:gap-20 gap-10 items-center">
+    <div className="flex lg:flex-row flex-col lg:gap-20 gap-10 items-center justify-center lg:justify-start">
       {INTRODUCTION_ITEMS.map(item => (
-        <div className="flex flex-col gap-2" key={item.label}>
+        <div
+          className="flex flex-col gap-2 max-lg:items-center lg:items-start"
+          key={item.label}
+        >
           <div className="flex flex-row items-center gap-2">
             {item.icon}
             <span className="text-gray-500">{item.label}</span>
@@ -36,7 +39,7 @@ export default function Introduction() {
           <h1 className="text-xl font-medium">{item.value}</h1>
         </div>
       ))}
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 max-lg:items-center lg:items-start">
         <div className="flex flex-row items-center gap-2">
           <CodeXmlIcon className="size-4 text-gray-500" />
           <span className="text-gray-500">Main Skills</span>
