@@ -3,67 +3,9 @@
 import clsx from 'clsx'
 import { motion } from 'motion/react'
 import { useState } from 'react'
-import { FolderGit2, Layers, Code2, Terminal } from 'lucide-react'
 import RepositoryCard from '../cards/RepositoryCard'
 import { IRepository } from '@/@types'
-
-const REPOSITORIES = [
-  {
-    id: 'repo1',
-    title: 'portfolio',
-    shortTitle: 'Portfolio',
-    description:
-      'This website is my portfolio. It shares a bit about who I am, my background, and some of the projects I’ve worked on. You can also find the source code on GitHub.',
-    technologies: [
-      'React',
-      'Next.js',
-      'TypeScript',
-      'Tailwind CSS',
-      'Motion',
-      'Zod',
-      'Resend',
-    ],
-    link: 'https://github.com/lucaskraus/lucaskraus',
-    icon: <Layers className="text-inherit" />,
-  },
-  {
-    id: 'repo2',
-    title: 'animations-dev-course',
-    shortTitle: 'Animations',
-    description:
-      'Animations built during the development of the course "Animations in the Web" by Emil Kowalski. It is a blueprint for cool and performant animations.',
-    technologies: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'Motion'],
-    link: 'https://github.com/lucaskraus/animations-dev-course',
-    icon: <Code2 className="text-inherit" />,
-  },
-  {
-    id: 'repo3',
-    title: 'daily-diet-api',
-    shortTitle: 'Daily Diet API',
-    description:
-      'API for a daily diet tracker. It helps you log your daily meals and monitor your progress over time. The full collection of endpoints is available in the repository.',
-    technologies: [
-      'Node.js',
-      'Fastify',
-      'TypeScript',
-      'Knex.js',
-      'SQLite',
-      'Zod',
-    ],
-    link: 'https://github.com/lucaskraus/daily-diet-api',
-    icon: <Terminal className="text-inherit" />,
-  },
-  {
-    id: 'repo4',
-    title: 'br-index-economy-article',
-    shortTitle: 'Bitcoin Article',
-    description:
-      'Article that I wrote about Bitcoin and decentralized finance. It was published in monthly newsletter of BR Index Economy group.',
-    technologies: ['Bitcoin', 'Web3', 'Economy', 'Article'],
-    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7313366457243852802/',
-    icon: <FolderGit2 className="text-inherit" />,
-  },
-]
+import { REPOSITORIES } from '@/lib/constants'
 
 export default function Repositories() {
   const [activeRepo, setActiveRepo] = useState<string>(REPOSITORIES[0].id)
