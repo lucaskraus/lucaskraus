@@ -6,20 +6,12 @@ import { useState } from 'react'
 import Image from 'next/image'
 import macintoshImage from '@/assets/macintosh.png'
 import { ABOUT_ME_TAB_MENU } from '@/lib/constants'
+import { useTypewriterLines } from '@/hooks/useTypewriterLines'
 
 const TabCard = ({ id }: { id: string }) => {
   const section = ABOUT_ME_TAB_MENU.find(tab => tab.id === id)
-  const words =
-    section?.content.split(/(\n)/g).flatMap(part => {
-      if (part === '\n') return ['\n']
-      return part.split(' ').filter(word => word !== '')
-    }) || []
-  const animationDuration = 0.3
-  const delayBetweenWords = 0.05
-  const totalAnimationTime =
-    words.length > 0
-      ? (words.length - 1) * delayBetweenWords + animationDuration
-      : 0
+  const { words, totalAnimationTime, animationDuration, delayBetweenWords } =
+    useTypewriterLines(section?.content)
 
   return (
     <div className="flex flex-row max-w-4xl flex-wrap gap-1">
