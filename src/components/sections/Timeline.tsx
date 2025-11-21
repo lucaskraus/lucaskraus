@@ -58,16 +58,6 @@ const TIMELINE_ITEMS = [
   },
 ]
 
-const TimelineLoadImages = () => {
-  return (
-    <div className="max-h-0 overflow-hidden">
-      {TIMELINE_ITEMS.map(item => (
-        <Image key={item.title} src={item.image} alt={item.title} />
-      ))}
-    </div>
-  )
-}
-
 const TimelineItem = ({
   title,
   label,
@@ -113,8 +103,6 @@ export default function Timeline() {
 
   return (
     <div className="flex flex-col gap-10">
-      {/* Dumb component to load images before they are used */}
-      <TimelineLoadImages />
       <div className="flex flex-row items-center justify-center">
         <div className="flex flex-col items-center w-full gap-2">
           <h1 className="text-2xl font-medium select-none">Career</h1>
