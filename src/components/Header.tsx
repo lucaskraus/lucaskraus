@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image'
+import { MessageCircleCodeIcon } from 'lucide-react'
 
 interface HeaderProps {
   items: { label: string; id: string }[]
@@ -17,7 +17,7 @@ export default function Header({ items }: HeaderProps) {
   return (
     <div className="sticky top-8 z-50 flex flex-row w-full px-6 py-3 items-center justify-between rounded-full backdrop-blur-xs border border-white/10 bg-black/10">
       <div>
-        <Image src="/logo.svg" alt="Logo" width={40} height={40} />
+        <MessageCircleCodeIcon className="size-6 text-white" />
       </div>
       <div className="flex flex-row gap-8">
         {items.map(item => (
