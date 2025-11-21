@@ -76,12 +76,12 @@ export default function AboutMe() {
           ))}
         </div>
         <div className="relative">
-          <div className="absolute top-22 left-20 max-w-66 max-h-44 overflow-y-auto scrollbar-hide">
+          <div className="absolute top-22 left-21 max-w-66 max-h-44 overflow-y-auto scrollbar-hide">
             <TabContent id={activeTab} />
           </div>
           <div className="flex flex-col gap-2 items-center">
             <Image src={macintoshImage} alt="Macintosh" width={400} />
-            <span className="text-xs text-gray-500 italic">
+            <span className="text-xs text-gray-500 italic text-center">
               You can scroll down the Macintosh screen to read the content
             </span>
           </div>
