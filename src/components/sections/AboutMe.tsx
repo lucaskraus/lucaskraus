@@ -9,7 +9,11 @@ import { ABOUT_ME_TAB_MENU } from '@/lib/constants'
 
 const TabCard = ({ id }: { id: string }) => {
   const section = ABOUT_ME_TAB_MENU.find(tab => tab.id === id)
-  const words = section?.content.split(' ') || []
+  const words =
+    section?.content.split(/(\n)/g).flatMap(part => {
+      if (part === '\n') return ['\n']
+      return part.split(' ').filter(word => word !== '')
+    }) || []
   const animationDuration = 0.3
   const delayBetweenWords = 0.05
   const totalAnimationTime =
@@ -19,24 +23,28 @@ const TabCard = ({ id }: { id: string }) => {
 
   return (
     <div className="flex flex-row max-w-4xl flex-wrap gap-1">
-      {words.map((word, index) => (
-        <motion.span
-          key={index}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            delay: index * delayBetweenWords,
-            duration: animationDuration,
-          }}
-          className="text-green-400 font-vt323 text-2xl select-none"
-        >
-          {word}
-        </motion.span>
-      ))}
+      {words.map((word, index) =>
+        word === '\n' ? (
+          <div key={index} className="basis-full h-0" />
+        ) : (
+          <motion.span
+            key={index}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: index * delayBetweenWords,
+              duration: animationDuration,
+            }}
+            className="text-green-400 font-vt323 text-2xl select-none"
+          >
+            {word}
+          </motion.span>
+        )
+      )}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: totalAnimationTime, duration: 0 }}
+        transition={{ delay: totalAnimationTime }}
         className="blink text-green-400"
       />
     </div>
