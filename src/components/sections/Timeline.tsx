@@ -66,7 +66,7 @@ export default function Timeline() {
         <motion.div
           initial={false}
           layout
-          className="flex flex-col lg:flex-row w-full lg:gap-12 gap-4 items-center justify-center"
+          className="flex flex-col lg:flex-row lg:flex-wrap w-full lg:gap-12 gap-4 items-center justify-center"
         >
           {TIMELINE_ITEMS.map(item => (
             <div
