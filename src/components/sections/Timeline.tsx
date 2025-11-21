@@ -2,60 +2,10 @@
 
 import { motion, LayoutGroup } from 'motion/react'
 import { useState, Activity } from 'react'
-import feiBackgroundImage from '@/assets/fei.png'
-import firstDevXpBackgroundImage from '@/assets/first-dev-xp.png'
-import xendoraBackgroundImage from '@/assets/xendora.png'
-import finishedBackgroundImage from '@/assets/finish.png'
-import startJourneyBackgroundImage from '@/assets/start-journey.jpg'
-import recognitionBackgroundImage from '@/assets/recognition.png'
 import TimelineCard from '@/components/cards/TimelineCard'
 import type { ITimelineItem } from '@/@types'
 import clsx from 'clsx'
-
-const TIMELINE_ITEMS = [
-  {
-    title: '2017',
-    label: 'Started my journey as intern',
-    description:
-      'Joined Vertice School as an intern, where I took my first steps in tech supporting infrastructure and building internal tools.',
-    image: startJourneyBackgroundImage,
-  },
-  {
-    title: '2019',
-    label: 'Professional Excellence Award',
-    description:
-      'Awarded the “76 Shirt”, a distinction given to top-performing employees for outstanding technical excellence and dedication.',
-    image: recognitionBackgroundImage,
-  },
-  {
-    title: '2020',
-    label: "Started bachelor's degree in CS",
-    description:
-      'Began my Computer Science degree at FEI, strengthening my foundations in algorithms, compilers, software engineering, and systems.',
-    image: feiBackgroundImage,
-  },
-  {
-    title: '2021',
-    label: 'My first developer experience',
-    description:
-      'Transitioned into full-stack development, building internal systems with React, Node.js, and MySQL to optimize workflows for over 200 users.',
-    image: firstDevXpBackgroundImage,
-  },
-  {
-    title: '2023',
-    label: 'Joined Xendora as Front-End Engineer',
-    description:
-      'Became a Front-End & Mobile Engineer at Xendora, developing cross-platform apps with React Native, Web3 features, CI/CD, and Sentry monitoring.',
-    image: xendoraBackgroundImage,
-  },
-  {
-    title: '2024',
-    label: "Finished my bachelor's degree",
-    description:
-      'Graduated in Computer Science, concluding a journey marked by academic projects, practical experience, and continuous growth.',
-    image: finishedBackgroundImage,
-  },
-]
+import { TIMELINE_ITEMS } from '@/lib/constants'
 
 const TimelineItem = ({
   title,

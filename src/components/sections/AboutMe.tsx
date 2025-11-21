@@ -3,34 +3,12 @@
 import clsx from 'clsx'
 import { motion } from 'motion/react'
 import { useState } from 'react'
-import { AppWindowMacIcon, TrophyIcon, BrainIcon } from 'lucide-react'
 import Image from 'next/image'
 import macintoshImage from '@/assets/macintosh.png'
-
-const TAB_MENU = [
-  {
-    id: 'introduction',
-    title: 'Introduction',
-    icon: <AppWindowMacIcon className="text-inherit" />,
-    content:
-      'Mobile & Front-End Engineer with over 8 years of experience in the industry. Specialized in building scalable and efficient web and mobile applications using React Native, React, Next.js, Vue.js, Nuxt.js, Tailwind CSS, and Node.js.',
-  },
-  {
-    id: 'certificates',
-    title: 'Certificates',
-    icon: <TrophyIcon className="text-inherit" />,
-    content: 'Certificates',
-  },
-  {
-    id: 'skills',
-    title: 'Skills',
-    icon: <BrainIcon className="text-inherit" />,
-    content: 'Skills',
-  },
-]
+import { ABOUT_ME_TAB_MENU } from '@/lib/constants'
 
 const TabCard = ({ id }: { id: string }) => {
-  const section = TAB_MENU.find(tab => tab.id === id)
+  const section = ABOUT_ME_TAB_MENU.find(tab => tab.id === id)
   const words = section?.content.split(' ') || []
   const animationDuration = 0.3
   const delayBetweenWords = 0.05
@@ -74,7 +52,7 @@ export default function AboutMe() {
       </div>
       <div className="flex flex-col gap-6 items-center w-full mx-auto max-w-5xl">
         <div className="flex flex-row gap-3">
-          {TAB_MENU.map(tab => (
+          {ABOUT_ME_TAB_MENU.map(tab => (
             <motion.div
               layout
               key={tab.id}
