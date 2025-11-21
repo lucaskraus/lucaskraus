@@ -54,20 +54,21 @@ export default function GetInTouch() {
       return
     }
 
-    try {
-      await fetch('/api/mail', {
-        method: 'POST',
-        body: JSON.stringify(data),
-      })
-    } catch (error) {
-      console.error(error)
-      toast.error('Failed to send message')
-    } finally {
+    const response = await fetch('/api/mail', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    })
+
+    if (!response.ok) {
       setErrors({})
-      toast.success('Message sent successfully!')
       setIsSubmitting(false)
-      form.reset()
+      toast.error(response.statusText || `Error: ${response.status}`)
+      throw new Error(response.statusText || `Error: ${response.status}`)
     }
+
+    setErrors({})
+    setIsSubmitting(false)
+    toast.success('Message sent successfully!')
   }
 
   return (
@@ -85,14 +86,9 @@ export default function GetInTouch() {
           <FieldGroup>
             <Field>
               <FieldLabel htmlFor="name">Name</FieldLabel>
-              <Input
-                id="name"
-                name="name"
-                placeholder="Your name"
-                onChange={() => clearError('name')}
-              />
+              <Input id="name" name="name" placeholder="Your name" />
               <FieldError
-                errors={errors.name?.map(msg => ({ message: msg }))}
+                errors={errors?.name?.map(msg => ({ message: msg }))}
               />
             </Field>
             <Field>
@@ -102,22 +98,16 @@ export default function GetInTouch() {
                 name="email"
                 type="email"
                 placeholder="your@email.com"
-                onChange={() => clearError('email')}
               />
               <FieldError
-                errors={errors.email?.map(msg => ({ message: msg }))}
+                errors={errors?.email?.map(msg => ({ message: msg }))}
               />
             </Field>
             <Field>
               <FieldLabel htmlFor="company">Company</FieldLabel>
-              <Input
-                id="company"
-                name="company"
-                placeholder="Your company"
-                onChange={() => clearError('company')}
-              />
+              <Input id="company" name="company" placeholder="Your company" />
               <FieldError
-                errors={errors.company?.map(msg => ({ message: msg }))}
+                errors={errors?.company?.map(msg => ({ message: msg }))}
               />
             </Field>
             <Field>
@@ -130,7 +120,7 @@ export default function GetInTouch() {
                 onChange={() => clearError('message')}
               />
               <FieldError
-                errors={errors.message?.map(msg => ({ message: msg }))}
+                errors={errors?.message?.map(msg => ({ message: msg }))}
               />
             </Field>
             <div className="flex w-full items-center justify-end">
