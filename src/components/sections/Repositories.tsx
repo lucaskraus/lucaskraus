@@ -10,8 +10,8 @@ import { IRepository } from '@/@types'
 const REPOSITORIES = [
   {
     id: 'repo1',
-    title: 'react-native-graph-kit',
-    shortTitle: 'RN Graph Kit',
+    title: 'portfolio',
+    shortTitle: 'Portfolio',
     description:
       'A high-performance graphing library for React Native, leveraging Skia for 60fps animations and interactions. Supports line, bar, and pie charts with gesture handling.',
     technologies: ['React Native', 'Skia', 'TypeScript', 'Reanimated'],
@@ -20,8 +20,8 @@ const REPOSITORIES = [
   },
   {
     id: 'repo2',
-    title: 'next-saas-boilerplate',
-    shortTitle: 'SaaS Starter',
+    title: 'animations-dev-course',
+    shortTitle: 'Animations',
     description:
       'A comprehensive production-ready SaaS boilerplate featuring Authentication, Billing (Stripe), User Dashboard, and Admin Panel. Built with modern web standards.',
     technologies: ['Next.js', 'Tailwind CSS', 'Prisma', 'Stripe'],
@@ -30,8 +30,8 @@ const REPOSITORIES = [
   },
   {
     id: 'repo3',
-    title: 'dev-cli-tools',
-    shortTitle: 'Dev CLI',
+    title: 'daily-diet-api',
+    shortTitle: 'Daily Diet API',
     description:
       'A collection of command-line interface tools designed to streamline the development workflow. Includes generators for components, hooks, and utility functions.',
     technologies: ['Node.js', 'Commander', 'Inquirer', 'Chalk'],
@@ -40,8 +40,8 @@ const REPOSITORIES = [
   },
   {
     id: 'repo4',
-    title: 'finance-tracker-app',
-    shortTitle: 'Finance App',
+    title: 'br-index-economy-article',
+    shortTitle: 'Bitcoin Article',
     description:
       'A cross-platform mobile application for personal finance management. Features automatic transaction categorization, budget planning, and spending insights.',
     technologies: ['Flutter', 'Dart', 'Firebase', 'Google Cloud'],
@@ -64,7 +64,7 @@ export default function Repositories() {
 
       <div className="flex flex-row gap-8 items-start w-full max-w-5xl">
         {/* Navigation Menu */}
-        <div className="flex flex-col justify-center gap-3 min-w-36">
+        <div className="flex flex-col justify-center gap-3 min-w-40">
           {REPOSITORIES.map(repo => (
             <button
               key={repo.id}
