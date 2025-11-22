@@ -31,7 +31,7 @@ export default function Home() {
         <div className="flex flex-col w-full gap-10 sticky top-0 z-50">
           <Header items={navItems} />
         </div>
-        <div className="flex flex-col justify-center items-center w-full -mt-10 gap-10 lg:gap-0">
+        <div className="flex flex-col justify-center items-center w-full -mt-10 gap-8 lg:gap-0">
           <Picture />
           <Introduction />
         </div>
