@@ -87,7 +87,12 @@ export default function GetInTouch() {
           <FieldGroup>
             <Field>
               <FieldLabel htmlFor="name">Name</FieldLabel>
-              <Input id="name" name="name" placeholder="Your name" />
+              <Input
+                id="name"
+                name="name"
+                placeholder="Your name"
+                onChange={() => clearError('name')}
+              />
               <FieldError
                 errors={errors?.name?.map(msg => ({ message: msg }))}
               />
@@ -99,6 +104,7 @@ export default function GetInTouch() {
                 name="email"
                 type="email"
                 placeholder="your@email.com"
+                onChange={() => clearError('email')}
               />
               <FieldError
                 errors={errors?.email?.map(msg => ({ message: msg }))}
@@ -106,7 +112,12 @@ export default function GetInTouch() {
             </Field>
             <Field>
               <FieldLabel htmlFor="company">Company</FieldLabel>
-              <Input id="company" name="company" placeholder="Your company" />
+              <Input
+                id="company"
+                name="company"
+                placeholder="Your company"
+                onChange={() => clearError('company')}
+              />
               <FieldError
                 errors={errors?.company?.map(msg => ({ message: msg }))}
               />

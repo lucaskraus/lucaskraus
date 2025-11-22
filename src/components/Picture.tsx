@@ -13,12 +13,7 @@ const Highlight = ({
   className?: string
 }) => {
   return (
-    <span
-      className={clsx(
-        'relative inline-block px-2 mx-1 align-middle group',
-        className
-      )}
-    >
+    <span className={clsx('relative inline-block px-2  group', className)}>
       <span
         className="absolute inset-0 bg-green-200/60 dark:bg-green-500/30 -skew-y-2 rounded-sm transition-transform group-hover:scale-105 group-hover:-skew-y-3"
         aria-hidden="true"
@@ -36,7 +31,7 @@ export default function Picture() {
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col md:flex-row gap-8 lg:gap-12 items-center justify-center relative w-full max-w-4xl mx-auto p-4"
+      className="flex flex-col md:flex-row gap-8 lg:gap-14 items-center justify-center relative w-full max-w-4xl mx-auto p-4"
     >
       <motion.div
         whileHover={{ rotate: 5, scale: 1.05 }}
@@ -45,8 +40,8 @@ export default function Picture() {
         <Image
           src={notionFacePng}
           alt="Notion Face"
-          width={180}
-          height={180}
+          width={190}
+          height={190}
           priority
           className="rounded-full"
         />
