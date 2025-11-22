@@ -20,7 +20,7 @@ const INTRODUCTION_ITEMS = [
   {
     icon: <BriefcaseIcon className="size-4 text-gray-500" />,
     label: 'Role',
-    value: 'Mobile & Front-End Engineer',
+    value: 'Front-End Engineer',
   },
 ]
 
