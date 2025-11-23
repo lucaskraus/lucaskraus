@@ -27,7 +27,7 @@ export default function Home() {
       hoverFillColor="#222222"
       className="w-full"
     >
-      <div className="w-full flex flex-col items-center pt-8 pb-12 lg:px-16 px-3 gap-28">
+      <div className="w-full flex flex-col items-center pt-8 pb-12 lg:px-16 px-3 gap-30">
         <div className="flex flex-col w-full gap-10 sticky top-0 z-50">
           <Header items={navItems} />
         </div>
@@ -35,7 +35,7 @@ export default function Home() {
           <Picture />
           <Introduction />
         </div>
-        <section id="about-me" className="scroll-mt-32 -mt-4 -mb-4">
+        <section id="about-me" className="scroll-mt-32 -mt-8">
           <AboutMe />
         </section>
         <section id="career" className="scroll-mt-32">
