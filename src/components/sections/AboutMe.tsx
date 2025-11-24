@@ -4,7 +4,7 @@ import clsx from 'clsx'
 import { motion } from 'motion/react'
 import { useState } from 'react'
 import Image from 'next/image'
-import macintoshImage from '@/assets/macintosh.png'
+import macintoshImage from '@/assets/macintosh.webp'
 import { ABOUT_ME_TAB_MENU } from '@/lib/constants'
 import { useTypewriterLines } from '@/hooks/useTypewriterLines'
 

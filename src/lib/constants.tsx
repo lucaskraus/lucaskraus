@@ -7,14 +7,14 @@ import {
   Code2,
   Terminal,
 } from 'lucide-react'
-import feiBackgroundImage from '@/assets/fei.png'
-import firstDevXpBackgroundImage from '@/assets/first-dev-xp.png'
-import xendoraBackgroundImage from '@/assets/xendora.png'
-import finishedBackgroundImage from '@/assets/finish.png'
+import feiBackgroundImage from '@/assets/fei.webp'
+import firstDevXpBackgroundImage from '@/assets/first-dev-xp.webp'
+import xendoraBackgroundImage from '@/assets/xendora.webp'
+import finishedBackgroundImage from '@/assets/finish.webp'
 import startJourneyBackgroundImage from '@/assets/start-journey.jpg'
-import recognitionBackgroundImage from '@/assets/recognition.png'
-import githubProfileImage from '@/assets/github-profile.png'
-import linkedinProfileImage from '@/assets/linkedin-profile.png'
+import recognitionBackgroundImage from '@/assets/recognition.webp'
+import githubProfileImage from '@/assets/github-profile.webp'
+import linkedinProfileImage from '@/assets/linkedin-profile.webp'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export const ABOUT_ME_TAB_MENU = [
