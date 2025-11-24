@@ -13,8 +13,8 @@ export default function Repositories() {
   return (
     <div className="flex flex-col gap-10 w-full items-center">
       <div className="flex flex-col items-center w-full gap-2">
-        <h1 className="text-2xl font-medium">Projects</h1>
-        <p className="text-lg text-center text-gray-400">
+        <h1 className="text-2xl font-medium select-none">Projects</h1>
+        <p className="text-lg text-center select-none">
           A selection of my favorite personal projects and repositories
         </p>
       </div>
