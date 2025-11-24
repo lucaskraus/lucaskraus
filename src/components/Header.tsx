@@ -14,7 +14,7 @@ export default function Header({ items }: HeaderProps) {
 
   return (
     <div className="sticky top-8 z-50 flex flex-row w-full lg:px-6 px-2.5 py-4 items-center justify-center rounded-full backdrop-blur-xs border border-white/10 bg-black/10">
-      <div className="flex flex-row gap-4 lg:gap-10">
+      <div className="flex flex-row gap-4 lg:gap-12">
         {items.map(item => (
           <button
             key={item.label}
