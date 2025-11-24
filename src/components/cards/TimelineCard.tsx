@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import Image from 'next/image'
 import type { ITimelineItem } from '@/@types'
 
 const LAYOUT_TRANSITION = {
@@ -16,20 +17,20 @@ export default function TimelineCard({
     <motion.div
       layout
       layoutId={`timeline-item-${title}`}
-      className="flex px-4 py-2 lg:w-84 h-40 shadow-md border border-[#271e37] relative will-change-transform overflow-hidden"
+      className="flex px-4 py-2 lg:w-84 h-40 shadow-md border border-[#271e37] relative overflow-hidden"
       style={{
         borderRadius: 16,
       }}
       transition={LAYOUT_TRANSITION}
     >
       {image && (
-        <div
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: `url(${image.src})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
+        <Image
+          src={image}
+          alt={title}
+          fill
+          className="absolute inset-0 z-0 object-cover"
+          placeholder="blur"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       )}
       <div className="absolute inset-0 bg-black/50 z-0" />
