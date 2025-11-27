@@ -2,7 +2,7 @@
 
 import clsx from 'clsx'
 import { motion } from 'motion/react'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import macintoshImage from '@/assets/macintosh.webp'
 import { ABOUT_ME_TAB_MENU } from '@/lib/constants'
@@ -45,6 +45,14 @@ const TabContent = ({ id }: { id: string }) => {
 
 export default function AboutMe() {
   const [activeTab, setActiveTab] = useState<string>('introduction')
+  const scrollContainerRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTop = 0
+    }
+  }, [activeTab])
+
   return (
     <div className="flex flex-col gap-4 w-full">
       <div className="flex flex-col items-center w-full gap-2">
@@ -76,8 +84,11 @@ export default function AboutMe() {
           ))}
         </div>
         <div className="relative">
-          <div className="absolute top-22 left-18 lg:left-21 max-w-66 max-h-44 overflow-y-auto scrollbar-hide">
-            <TabContent id={activeTab} />
+          <div
+            ref={scrollContainerRef}
+            className="absolute top-22 left-18 lg:left-21 max-w-66 max-h-44 overflow-y-auto scrollbar-hide"
+          >
+            <TabContent key={activeTab} id={activeTab} />
           </div>
           <div className="flex flex-col gap-2 items-center">
             <Image src={macintoshImage} alt="Macintosh" width={400} />
