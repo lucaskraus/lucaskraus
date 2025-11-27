@@ -12,7 +12,7 @@ import {
 } from '@/components/ui/field'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import { LoadingSpinner } from '@/components/LoadingSpinner'
+import { Spinner } from '@/components/ui/spinner'
 import { formContactSchema } from '@/modules/contact/contact.schema'
 
 export default function GetInTouch() {
@@ -141,7 +141,14 @@ export default function GetInTouch() {
                 className="w-fit mt-2"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? <LoadingSpinner /> : 'Send Message'}
+                {isSubmitting ? (
+                  <div className="flex flex-row items-center gap-2">
+                    <Spinner className="size-4" />
+                    <span>Sending</span>
+                  </div>
+                ) : (
+                  'Send Message'
+                )}
               </Button>
             </div>
           </FieldGroup>
