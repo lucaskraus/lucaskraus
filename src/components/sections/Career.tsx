@@ -37,6 +37,9 @@ const TimelineItem = ({
         stiffness: 300,
         damping: 30,
       }}
+      whileHover={{
+        scale: 1.05,
+      }}
     >
       {image && (
         <Image

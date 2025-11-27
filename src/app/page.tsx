@@ -1,6 +1,6 @@
 import Header from '@/components/Header'
 import Introduction from '@/components/Introduction'
-import Timeline from '@/components/sections/Timeline'
+import Timeline from '@/components/sections/Career'
 import WhereToFindMe from '@/components/sections/WhereToFindMe'
 import AboutMe from '@/components/sections/AboutMe'
 import Picture from '@/components/Picture'
