@@ -54,7 +54,7 @@ const TimelineItem = ({
         <p className="text-lg lg:text-base text-center">{label}</p>
         <h1 className="text-xl font-medium font-vt323">{title}</h1>
         <div className="relative flex items-center justify-center">
-          <div className="h-3 w-3 bg-blue-400 rounded-full animate-pulse" />
+          <div className="h-3 w-3 bg-green-400 rounded-full animate-pulse" />
         </div>
       </div>
     </motion.div>
