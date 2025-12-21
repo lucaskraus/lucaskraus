@@ -133,7 +133,7 @@ export const REPOSITORIES = [
     title: 'daily-diet-api',
     shortTitle: 'Daily Diet API',
     description:
-      'API for a daily diet tracker. It helps you log your daily meals and monitor your progress over time. The full collection of endpoints is available in the repository.',
+      'REST API for a daily diet tracker. It helps you log your daily meals and monitor your progress over time. The full collection of endpoints is available in the repository.',
     technologies: [
       'Node.js',
       'Fastify',
