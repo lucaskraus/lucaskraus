@@ -34,6 +34,7 @@ export const ABOUT_ME_TAB_MENU = [
       '• GitHub Foundations Certification\n' +
       '• Cielo Dev Bootcamp (Ada + Cielo)\n' +
       '• Scalable Microservices with Node.js — Rocketseat\n' +
+      '• Animations on the Web - animations.dev\n' +
       '• Duolingo English Test — 120 Score (B2)',
   },
   {
