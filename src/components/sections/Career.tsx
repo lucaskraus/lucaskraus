@@ -56,7 +56,7 @@ const TimelineItem = ({
           <p className="text-lg lg:text-base text-center">{label}</p>
         </div>
         <div className="w-0.5 bg-[#271e37] h-4"></div>
-        <div className="relative flex flex-col items-center justify-center s border border-[#271e37] rounded-full w-16 h-16">
+        <div className="relative flex flex-col items-center justify-center border border-[#271e37] rounded-full w-16 h-16">
           {icon}
           <h1 className="text-lg font-medium font-vt323">{title}</h1>
         </div>
