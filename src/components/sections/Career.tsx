@@ -6,12 +6,12 @@ import TimelineCard from '@/components/cards/TimelineCard'
 import type { ITimelineItem } from '@/@types'
 import { TIMELINE_ITEMS } from '@/lib/constants'
 import Image from 'next/image'
-import { Flag } from 'lucide-react'
 
 const TimelineItem = ({
   title,
   label,
   image,
+  icon,
   description,
   selected,
 }: ITimelineItem) => {
@@ -31,7 +31,7 @@ const TimelineItem = ({
       initial={false}
       layout
       layoutId={`timeline-item-${title}`}
-      className="flex flex-col gap-2.5 items-center max-w-none lg:max-w-44 relative overflow-hidden p-4"
+      className="flex flex-col gap-2.5 items-center max-w-none lg:max-w-52 relative overflow-hidden p-4"
       style={{ borderRadius: 16 }}
       transition={{
         type: 'spring',
@@ -51,13 +51,14 @@ const TimelineItem = ({
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       )}
-      <div className="relative z-10 flex flex-col items-center gap-4">
-        <p className="text-lg lg:text-base text-center">{label}</p>
-        <div className="relative flex flex-row items-center gap-1.5 animate-pulse">
-          <Flag className="size-4 text-green-400" />
-          <h1 className="text-xl font-medium font-vt323 text-green-400">
-            {title}
-          </h1>
+      <div className="relative z-10 flex flex-col items-center">
+        <div className="border border-[#271e37] bg-black/30 p-4 rounded-xl">
+          <p className="text-lg lg:text-base text-center">{label}</p>
+        </div>
+        <div className="w-0.5 bg-[#271e37] h-4"></div>
+        <div className="relative flex flex-col items-center justify-center s border border-[#271e37] rounded-full w-16 h-16">
+          {icon}
+          <h1 className="text-lg font-medium font-vt323">{title}</h1>
         </div>
       </div>
     </motion.div>
@@ -81,9 +82,9 @@ export default function Timeline() {
         <motion.div
           initial={false}
           layout
-          className="flex flex-col lg:flex-row lg:flex-wrap w-full lg:gap-12 gap-4 items-center justify-center"
+          className="flex flex-col lg:flex-row lg:flex-wrap w-full lg:gap-8 gap-4 items-center justify-center"
         >
-          {TIMELINE_ITEMS.map(item => (
+          {TIMELINE_ITEMS.map((item, index) => (
             <div
               key={item.title}
               className="cursor-pointer"
@@ -91,11 +92,13 @@ export default function Timeline() {
               role="button"
             >
               <TimelineItem
+                index={index}
                 title={item.title}
                 label={item.label}
                 description={item.description}
                 selected={selectedItem?.title === item.title}
                 image={item.image}
+                icon={item.icon}
               />
             </div>
           ))}

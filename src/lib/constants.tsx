@@ -6,6 +6,11 @@ import {
   Layers,
   Code2,
   Terminal,
+  HammerIcon,
+  GraduationCapIcon,
+  CodeIcon,
+  Building2Icon,
+  PartyPopperIcon,
 } from 'lucide-react'
 import feiBackgroundImage from '@/assets/fei.webp'
 import firstDevXpBackgroundImage from '@/assets/first-dev-xp.webp'
@@ -60,6 +65,7 @@ export const TIMELINE_ITEMS = [
     description:
       'Joined Vertice School as an intern, where I took my first steps in tech supporting infrastructure and building internal tools.',
     image: startJourneyBackgroundImage,
+    icon: <HammerIcon className="size-4" />,
   },
   {
     title: '2019',
@@ -67,6 +73,7 @@ export const TIMELINE_ITEMS = [
     description:
       'Awarded the “76 Shirt”, a distinction given to top-performing employees for outstanding technical excellence and dedication.',
     image: recognitionBackgroundImage,
+    icon: <TrophyIcon className="size-4" />,
   },
   {
     title: '2020',
@@ -74,6 +81,7 @@ export const TIMELINE_ITEMS = [
     description:
       'Began my Computer Science degree at FEI, strengthening my foundations in algorithms, compilers, software engineering, and systems.',
     image: feiBackgroundImage,
+    icon: <GraduationCapIcon className="size-4" />,
   },
   {
     title: '2021',
@@ -81,6 +89,7 @@ export const TIMELINE_ITEMS = [
     description:
       'Transitioned into full-stack development, building internal systems with React, Node.js, and MySQL to optimize workflows for over 200 users.',
     image: firstDevXpBackgroundImage,
+    icon: <CodeIcon className="size-4" />,
   },
   {
     title: '2023',
@@ -88,6 +97,7 @@ export const TIMELINE_ITEMS = [
     description:
       'Became a Front-End & Mobile Engineer at Xendora, developing cross-platform apps with React Native, Web3 features, CI/CD, and Sentry monitoring.',
     image: xendoraBackgroundImage,
+    icon: <Building2Icon className="size-4" />,
   },
   {
     title: '2024',
@@ -95,6 +105,7 @@ export const TIMELINE_ITEMS = [
     description:
       'Graduated in Computer Science, concluding a journey marked by academic projects, practical experience, and continuous growth.',
     image: finishedBackgroundImage,
+    icon: <PartyPopperIcon className="size-4" />,
   },
 ]
 
