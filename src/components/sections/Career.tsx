@@ -6,6 +6,16 @@ import TimelineCard from '@/components/cards/TimelineCard'
 import type { ITimelineItem } from '@/@types'
 import { TIMELINE_ITEMS } from '@/lib/constants'
 import Image from 'next/image'
+import { cn } from '@/lib/utils'
+
+const PASTEL_COLORS = [
+  { border: 'border-[#a8d5ba]', bg: 'bg-[#a8d5ba]' }, // mint green
+  { border: 'border-[#f4b8c5]', bg: 'bg-[#f4b8c5]' }, // rose pink
+  { border: 'border-[#b5c7ed]', bg: 'bg-[#b5c7ed]' }, // periwinkle blue
+  { border: 'border-[#f9d89c]', bg: 'bg-[#f9d89c]' }, // soft yellow
+  { border: 'border-[#c9b8e8]', bg: 'bg-[#c9b8e8]' }, // lavender
+  { border: 'border-[#9dd5d0]', bg: 'bg-[#9dd5d0]' }, // aqua
+]
 
 const TimelineItem = ({
   title,
@@ -14,7 +24,11 @@ const TimelineItem = ({
   icon,
   description,
   selected,
+  index = 0,
 }: ITimelineItem) => {
+  const colorIndex = index % PASTEL_COLORS.length
+  const pastelColor = PASTEL_COLORS[colorIndex]
+
   if (selected) {
     return (
       <TimelineCard
@@ -52,11 +66,21 @@ const TimelineItem = ({
         />
       )}
       <div className="relative z-10 flex flex-col items-center">
-        <div className="border border-[#271e37] bg-black/30 p-4 rounded-xl">
+        <div
+          className={cn(
+            'border bg-black/30 p-4 rounded-xl',
+            pastelColor.border
+          )}
+        >
           <p className="text-lg lg:text-base text-center">{label}</p>
         </div>
-        <div className="w-0.5 bg-[#271e37] h-4"></div>
-        <div className="relative flex flex-col items-center justify-center border border-[#271e37] rounded-full w-16 h-16">
+        <div className={cn('w-0.5 h-4', pastelColor.bg)}></div>
+        <div
+          className={cn(
+            'relative flex flex-col items-center justify-center border rounded-full w-16 h-16',
+            pastelColor.border
+          )}
+        >
           {icon}
           <h1 className="text-lg font-medium font-vt323">{title}</h1>
         </div>
