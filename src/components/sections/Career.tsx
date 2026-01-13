@@ -6,6 +6,7 @@ import TimelineCard from '@/components/cards/TimelineCard'
 import type { ITimelineItem } from '@/@types'
 import { TIMELINE_ITEMS } from '@/lib/constants'
 import Image from 'next/image'
+import { Flag } from 'lucide-react'
 
 const TimelineItem = ({
   title,
@@ -30,7 +31,7 @@ const TimelineItem = ({
       initial={false}
       layout
       layoutId={`timeline-item-${title}`}
-      className="flex flex-col gap-2.5 items-center max-w-none lg:max-w-48 relative overflow-hidden p-4"
+      className="flex flex-col gap-2.5 items-center max-w-none lg:max-w-44 relative overflow-hidden p-4"
       style={{ borderRadius: 16 }}
       transition={{
         type: 'spring',
@@ -50,11 +51,13 @@ const TimelineItem = ({
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       )}
-      <div className="relative z-10 flex flex-col items-center gap-2.5">
+      <div className="relative z-10 flex flex-col items-center gap-4">
         <p className="text-lg lg:text-base text-center">{label}</p>
-        <h1 className="text-xl font-medium font-vt323">{title}</h1>
-        <div className="relative flex items-center justify-center">
-          <div className="h-3 w-3 bg-green-400 rounded-full animate-pulse" />
+        <div className="relative flex flex-row items-center gap-1.5 animate-pulse">
+          <Flag className="size-4 text-green-400" />
+          <h1 className="text-xl font-medium font-vt323 text-green-400">
+            {title}
+          </h1>
         </div>
       </div>
     </motion.div>
