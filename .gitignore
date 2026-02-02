@@ -42,3 +42,9 @@ next-env.d.ts
 
 # tasks
 TASKS.md
+
+# agents
+.agents
+
+# cursor
+.cursor
