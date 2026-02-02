@@ -25,8 +25,12 @@ export async function sendEmailToSender(name: string, email: string) {
     await resend.emails.send({
       from: 'no-reply@kraustechconsult.com.br',
       to: email,
-      subject: 'Thank you for your message',
-      html: `<p>Thank you for your message, ${name}. I will get back to you soon.</p>`,
+      template: {
+        id: 'get-in-touch',
+        variables: {
+          name,
+        },
+      },
     })
   } catch (error) {
     console.error('Failed to send confirmation email:', error)
