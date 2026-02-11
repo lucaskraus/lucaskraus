@@ -45,7 +45,7 @@ export default function Introduction() {
           <span className="text-gray-500">Main Skills</span>
         </div>
         <img
-          src="https://skillicons.dev/icons?i=ts,react,nextjs,vue,nuxtjs,tailwind,figma,nodejs,aws,sentry&theme=dark&perline=5"
+          src="https://skillicons.dev/icons?i=ts,react,nextjs,vue,nuxtjs,tailwind,figma,nodejs,redux,sentry&theme=dark&perline=5"
           loading="eager"
           alt="Skill Icons"
         />
