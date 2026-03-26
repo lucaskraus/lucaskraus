@@ -54,7 +54,7 @@ export default function Picture() {
         </span>{' '}
         and I&apos;m a{' '}
         <Highlight className="text-2xl md:text-3xl">Mobile</Highlight> and{' '}
-        <Highlight className="text-2xl md:text-3xl">Front-End</Highlight>{' '}
+        <Highlight className="text-2xl md:text-3xl">Frontend</Highlight>{' '}
         Engineer
       </h1>
     </motion.div>

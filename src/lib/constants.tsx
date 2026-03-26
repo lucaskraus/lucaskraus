@@ -28,14 +28,14 @@ export const ABOUT_ME_TAB_MENU = [
     title: 'Introduction',
     icon: <AppWindowMacIcon className="text-inherit" />,
     content:
-      'Mobile & Front-End Engineer with over 8 years of experience in the industry. Specialized in building scalable and efficient web and mobile applications using React Native, React, Next.js, Vue.js, Nuxt.js, Tailwind CSS, and Node.js.',
+      'Mobile & Frontend Engineer with over 8 years of experience in the industry. Specialized in building scalable and efficient web and mobile applications using React Native, React, Next.js, Vue.js, Nuxt.js, Tailwind CSS, and Node.js.',
   },
   {
     id: 'certificates',
     title: 'Certificates',
     icon: <TrophyIcon className="text-inherit" />,
     content:
-      '• Meta Professional Front-End Developer Certificate\n' +
+      '• Meta Professional Frontend Developer Certificate\n' +
       '• GitHub Foundations Certification\n' +
       '• Cielo Dev Bootcamp (Ada + Cielo)\n' +
       '• Scalable Microservices with Node.js — Rocketseat\n' +
@@ -47,7 +47,7 @@ export const ABOUT_ME_TAB_MENU = [
     title: 'Skills',
     icon: <BrainIcon className="text-inherit" />,
     content:
-      '• Front-End: React, Next.js, Vue.js, Nuxt.js, Tailwind CSS\n' +
+      '• Frontend: React, Next.js, Vue.js, Nuxt.js, Tailwind CSS\n' +
       '• Mobile: React Native (Expo), Nativewind, Reanimated\n' +
       '• Web3: Ethers.js, Wagmi, Reown\n' +
       '• Back-End: Node.js, Fastify, REST APIs\n' +
@@ -93,9 +93,9 @@ export const TIMELINE_ITEMS = [
   },
   {
     title: '2023',
-    label: 'Joined Xendora as Front-End Engineer',
+    label: 'Joined Xendora as Frontend Engineer',
     description:
-      'Became a Front-End & Mobile Engineer at Xendora, developing cross-platform apps with React Native, Web3 features, CI/CD, and Sentry monitoring.',
+      'Became a Frontend & Mobile Engineer at Xendora, developing cross-platform apps with React Native, Web3 features, CI/CD, and Sentry monitoring.',
     image: xendoraBackgroundImage,
     icon: <Building2Icon className="size-4" />,
   },

@@ -10,11 +10,11 @@ My name is Lucas Kraus. I'm 23 years old. Bachelor in Computer Science from Cent
 <br>
 B.Sc. in Computer Science - FEI University Center <br>
 
-**Certificates 🥇** 
+**Certificates 🥇**
 <br>
-Meta Front-End Developer Professional Certificate <br>
+Meta Frontend Developer Professional Certificate <br>
 GitHub Foundations Certification <br>
-Full Stack Bootcamp Cielo Dev <br> 
+Full Stack Bootcamp Cielo Dev <br>
 ... <br>
 You can check my certifications and certificates in <a href="https://github.com/lucaskraus/certificates">Certificates.</a>
 <br>
@@ -22,7 +22,7 @@ You can check my certifications and certificates in <a href="https://github.com/
 <h3 align="left">Where to find me:</h3>
 
 [![Find Me](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/lucas-kraus-00200b252/)
-<br> 
+<br>
 <br>
 
 You can check some projects made by me in <a href="https://github.com/lucaskraus?tab=repositories">Repositories.</a><br>
