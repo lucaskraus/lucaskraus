@@ -31,35 +31,6 @@ Bachelor in Computer Science from Centro Universitário FEI (São Paulo). I buil
 
 ---
 
-## GitHub stats
-
-<div align="center">
-
-<a href="https://github.com/lucaskraus">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=lucaskraus&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="Lucas's GitHub stats" />
-</a>
-<a href="https://github.com/lucaskraus">
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lucaskraus&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top languages" />
-</a>
-
-<br />
-<br />
-
-<a href="https://github.com/lucaskraus">
-  <img src="https://streak-stats.demolab.com?user=lucaskraus&theme=tokyonight&hide_border=true" alt="GitHub streak" />
-</a>
-
-<br />
-<br />
-
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=lucaskraus&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=10" alt="GitHub trophies" />
-</a>
-
-</div>
-
----
-
 ## Contribution graph
 
 <div align="center">
