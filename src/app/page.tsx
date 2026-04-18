@@ -12,7 +12,7 @@ import Repositories from '@/components/sections/Repositories'
 export default function Home() {
   const navItems = [
     { label: 'About Me', id: 'about-me' },
-    { label: 'Career', id: 'career' },
+    // { label: 'Career', id: 'career' },
     { label: 'Projects', id: 'projects' },
     { label: 'Where to find me', id: 'where-to-find-me' },
     { label: 'Get in touch', id: 'get-in-touch' },
