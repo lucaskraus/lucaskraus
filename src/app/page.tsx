@@ -38,9 +38,9 @@ export default function Home() {
         <section id="about-me" className="scroll-mt-32 -mt-8">
           <AboutMe />
         </section>
-        <section id="career" className="scroll-mt-32">
+        {/* <section id="career" className="scroll-mt-32">
           <Timeline />
-        </section>
+        </section> */}
         <section id="projects" className="scroll-mt-32 w-full">
           <Repositories />
         </section>
