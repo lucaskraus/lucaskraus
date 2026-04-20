@@ -11,6 +11,7 @@ import {
   CodeIcon,
   Building2Icon,
   PartyPopperIcon,
+  Clapperboard,
 } from 'lucide-react'
 import feiBackgroundImage from '@/assets/fei.webp'
 import firstDevXpBackgroundImage from '@/assets/first-dev-xp.webp'
@@ -132,6 +133,22 @@ export const REPOSITORIES = [
   },
   {
     id: 'repo2',
+    title: 'the-movie-db-app',
+    shortTitle: 'Movie DB App',
+    description:
+      'Mobile app built on top of The Movie DB API. Browse movies, search by title, watch trailers, and manage a personal watchlist.',
+    technologies: [
+      'React Native',
+      'Expo',
+      'Expo Router',
+      'Tailwind CSS',
+      'Axios',
+    ],
+    link: 'https://github.com/lucaskraus/the-movie-db-app',
+    icon: <Clapperboard className="text-inherit" />,
+  },
+  {
+    id: 'repo3',
     title: 'animations-dev-course',
     shortTitle: 'Animations',
     description:
@@ -141,7 +158,7 @@ export const REPOSITORIES = [
     icon: <Code2 className="text-inherit" />,
   },
   {
-    id: 'repo3',
+    id: 'repo4',
     title: 'daily-diet-api',
     shortTitle: 'Daily Diet API',
     description:
@@ -158,7 +175,7 @@ export const REPOSITORIES = [
     icon: <Terminal className="text-inherit" />,
   },
   {
-    id: 'repo4',
+    id: 'repo5',
     title: 'br-index-economy-article',
     shortTitle: 'Bitcoin Article',
     description:
