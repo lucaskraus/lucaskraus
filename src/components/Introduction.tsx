@@ -15,12 +15,12 @@ const INTRODUCTION_ITEMS = [
   {
     icon: <Building2Icon className="size-4 text-gray-500" />,
     label: 'Current Company',
-    value: 'Xendora',
+    value: 'SweatWorks',
   },
   {
     icon: <BriefcaseIcon className="size-4 text-gray-500" />,
     label: 'Role',
-    value: 'Frontend Engineer',
+    value: 'Mobile Engineer',
   },
 ]
 
