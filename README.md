@@ -16,7 +16,7 @@
 
 ## About me
 
-Bachelor in Computer Science from Centro Universitário FEI (São Paulo). I build fast, well-crafted web interfaces — mostly with the React ecosystem — and care a lot about the details that make a product feel finished.
+Bachelor in Computer Science from Centro Universitário FEI (São Paulo). I build fast, well-crafted web interfaces — mostly with the React ecosystem — and care a lot about the details that make a product feel finished
 
 ---
 
