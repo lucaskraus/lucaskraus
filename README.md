@@ -24,7 +24,7 @@ Bachelor in Computer Science from Centro Universitário FEI (São Paulo). I buil
 
 | Category          | Tools                                                                                                      |
 | ----------------- | ---------------------------------------------------------------------------------------------------------- |
-| **Languages**     | [![](https://skillicons.dev/icons?i=ts,js,go,python,html,css)](https://skillicons.dev)                     |
+| **Languages**     | [![](https://skillicons.dev/icons?i=ts,js,swift,go,python)](https://skillicons.dev)                     |
 | **Frameworks**    | [![](https://skillicons.dev/icons?i=react,nextjs,vue,nuxtjs,nodejs,tailwind,sass)](https://skillicons.dev) |
 | **Tools & Infra** | [![](https://skillicons.dev/icons?i=aws,supabase,sentry,figma,linux,windows)](https://skillicons.dev)      |
 | **Databases**     | [![](https://skillicons.dev/icons?i=mysql,sqlite)](https://skillicons.dev)                                 |
