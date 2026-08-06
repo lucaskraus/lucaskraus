@@ -31,15 +31,6 @@ Bachelor in Computer Science from Centro Universitário FEI (São Paulo). I buil
 
 ---
 
-## Education & certifications
-
-- **B.Sc. in Computer Science** — Centro Universitário FEI
-- **Meta Frontend Developer Professional Certificate**
-- **GitHub Foundations Certification**
-- **Full Stack Bootcamp Cielo Dev**
-
----
-
 ## Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-kraus-00200b252/)
