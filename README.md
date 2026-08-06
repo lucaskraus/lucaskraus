@@ -38,8 +38,6 @@ Bachelor in Computer Science from Centro Universitário FEI (São Paulo). I buil
 - **GitHub Foundations Certification**
 - **Full Stack Bootcamp Cielo Dev**
 
-[![Certificates](https://img.shields.io/badge/See_all_certificates-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lucaskraus/certificates)
-
 ---
 
 ## Connect
