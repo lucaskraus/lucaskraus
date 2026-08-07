@@ -12,9 +12,7 @@
 
 </div>
 
----
-
-## 🖇️ About me
+## About me
 
 ```tsx
 <AboutMe
@@ -30,9 +28,7 @@
 
 <img src="https://media.giphy.com/media/cXblnKXr2BQOaYnTni/giphy.gif" alt="Michael Scott — The Office" width="192" />
 
----
-
-## 🛠️ Tech stack
+## Tech stack
 
 | Category          | Tools                                                                                                      |
 | ----------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -43,16 +39,11 @@
 
 <img src="https://media.giphy.com/media/dXFKDUolyLLi8gq6Cl/giphy.gif" alt="The Office — IT guy" width="192" />
 
----
-
-## 🤝 Connect
+## Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-kraus-00200b252/)
-
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lucas.kraus@xendora.com)
-
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lucaskraus)
-
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://lucaskraus.me)
 
 <img src="https://media.giphy.com/media/jqS1XUg1YKjXPr3MEx/giphy.gif" alt="The Office — handshake" width="192" />
