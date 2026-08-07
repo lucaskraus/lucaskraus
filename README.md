@@ -14,29 +14,56 @@
 
 ---
 
-## About me
+## 🖇️ About me
 
-Bachelor in Computer Science from Centro Universitário FEI (São Paulo). I build fast, well-crafted web interfaces — mostly with the React ecosystem — and care a lot about the details that make a product feel finished
+<img src="https://media.giphy.com/media/cXblnKXr2BQOaYnTni/giphy.gif" alt="Michael Scott — The Office" width="320" align="right" />
+
+```tsx
+<AboutMe
+  name="Lucas Kraus"
+  role="Frontend Engineer"
+  degree="B.Sc. in Computer Science"
+  university="Centro Universitário FEI"
+  location="São Paulo, Brazil"
+  focus={['React', 'Next.js', 'TypeScript']}
+  passion="Building fast, well-crafted web interfaces"
+  motto="The details make a product feel finished"
+  favoriteShow="The Office"
+/>
+```
+
+<br clear="right" />
 
 ---
 
-## Tech stack
+## 🛠️ Tech stack
+
+<img src="https://media.giphy.com/media/dXFKDUolyLLi8gq6Cl/giphy.gif" alt="The Office — IT guy" width="320" align="right" />
 
 | Category          | Tools                                                                                                      |
 | ----------------- | ---------------------------------------------------------------------------------------------------------- |
-| **Languages**     | [![](https://skillicons.dev/icons?i=ts,js,swift,go,python)](https://skillicons.dev)                     |
+| **Languages**     | [![](https://skillicons.dev/icons?i=ts,js,swift,go,python)](https://skillicons.dev)                        |
 | **Frameworks**    | [![](https://skillicons.dev/icons?i=react,nextjs,vue,nuxtjs,nodejs,tailwind,sass)](https://skillicons.dev) |
 | **Tools & Infra** | [![](https://skillicons.dev/icons?i=aws,supabase,sentry,figma,linux,windows)](https://skillicons.dev)      |
-| **Databases**     | [![](https://skillicons.dev/icons?i=postgres,mysql,mongodb)](https://skillicons.dev)                                 |
+| **Databases**     | [![](https://skillicons.dev/icons?i=postgres,mysql,mongodb)](https://skillicons.dev)                       |
+
+<br clear="right" />
 
 ---
 
-## Connect
+## 🤝 Connect
+
+<img src="https://media.giphy.com/media/jqS1XUg1YKjXPr3MEx/giphy.gif" alt="The Office — handshake" width="320" align="right" />
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lucas-kraus-00200b252/)
+
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lucas.kraus@xendora.com)
+
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lucaskraus)
+
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://lucaskraus.me)
+
+<br clear="right" />
 
 <div align="center">
 
