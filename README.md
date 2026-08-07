@@ -2,7 +2,7 @@
 
 <!-- Animated typing header -->
 <a href="https://github.com/lucaskraus">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3200&pause=800&color=7AA2F7&center=true&vCenter=true&width=620&lines=Hi%2C+I'm+Lucas+Kraus+%F0%9F%91%8B;Frontend+Engineer;Next.js+%E2%80%A2+React+%E2%80%A2+TypeScript;Based+in+S%C3%A3o+Paulo%2C+Brazil" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3200&pause=800&color=7AA2F7&center=true&vCenter=true&width=620&lines=Hi%2C+I'm+Lucas+Kraus+%F0%9F%91%8B;Frontend+%26+Mobile+Engineer;React+%E2%80%A2+React+Native+%E2%80%A2+TypeScript;Based+in+S%C3%A3o+Paulo%2C+Brazil" alt="Typing SVG" />
 </a>
 
 <br />
