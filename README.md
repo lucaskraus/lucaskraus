@@ -26,7 +26,7 @@
 />
 ```
 
-<img src="https://media.giphy.com/media/cXblnKXr2BQOaYnTni/giphy.gif" alt="Michael Scott — The Office" width="192" />
+<!-- <img src="https://media.giphy.com/media/cXblnKXr2BQOaYnTni/giphy.gif" alt="Michael Scott — The Office" width="192" /> -->
 
 ## Tech stack
 
@@ -37,7 +37,7 @@
 | **Tools & Infra** | [![](https://skillicons.dev/icons?i=aws,supabase,sentry,figma,linux,windows)](https://skillicons.dev)      |
 | **Databases**     | [![](https://skillicons.dev/icons?i=postgres,mysql,mongodb)](https://skillicons.dev)                       |
 
-<img src="https://media.giphy.com/media/dXFKDUolyLLi8gq6Cl/giphy.gif" alt="The Office — IT guy" width="192" />
+<!-- <img src="https://media.giphy.com/media/dXFKDUolyLLi8gq6Cl/giphy.gif" alt="The Office — IT guy" width="192" /> -->
 
 ## Connect
 
